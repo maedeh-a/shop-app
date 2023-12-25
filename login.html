@@ -9,19 +9,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
     <!--  login-->
-    <main class="mx-auto h-100 ">
+    <main class="mx-auto h-100 d-flex flex-column pb-2">
         <div id="myCarousel" class="carousel slide d-flex flex-column mb-2 h-100">
             <div class="carousel-inner h-100">
                 <div class="carousel-item active h-100">
                     <div class="active d-flex flex-column align-items-center mx-3 flex-grow-1 h-100">
-                        <div class="h-65 d-flex align-items-center justify-content-center">
+                        <div class="h-65 d-flex align-items-center justify-content-center flex-grow-1">
                             <img src="../assets/img/message-text.svg" class="" alt="">
                         </div>
-                        <div class="mb-4">
+                        <div class="mt-auto">
                             <h5 class="text-dark fs-4 text-center mb-4"><b>عنوان اسکرین</b></h5>
                             <div class="">
                                 <p class="text-dark small text-center ">
@@ -36,10 +37,10 @@
                 </div>
                 <div class="carousel-item h-100">
                     <div class="d-flex flex-column align-items-center mx-3 flex-grow-1 h-100">
-                        <div class="h-65 d-flex align-items-center justify-content-center h-100">
+                        <div class="h-65 d-flex align-items-center justify-content-center h-100 flex-grow-1">
                             <img src="../assets/img/Campaign.png" class="" alt="">
                         </div>
-                        <div class="mb-4">
+                        <div class="mt-auto">
                             <h5 class="text-dark fs-4 text-center mb-4"><b>عنوان اسکرین</b></h5>
                             <div class="">
                                 <p class="text-dark small text-center ">
@@ -54,10 +55,10 @@
                 </div>
                 <div class="carousel-item h-100">
                     <div class="d-flex flex-column align-items-center mx-3 flex-grow-1 h-100">
-                        <div class="h-65 d-flex align-items-center justify-content-center h-100">
+                        <div class="h-65 d-flex align-items-center justify-content-center h-100 flex-grow-1">
                             <img src="../assets/img/Rich.png" class="" alt="">
                         </div>
-                        <div class="mb-4">
+                        <div class="mt-auto">
                             <h5 class="text-dark fs-4 text-center mb-4"><b>عنوان اسکرین</b></h5>
                             <div class="">
                                 <p class="text-dark small text-center ">
@@ -71,15 +72,13 @@
                     </div>
                 </div>
 
-
-
             </div>
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            <div class="carousel-indicators position-relative pt-3" dir="ltr">
+                <button class="bg-info active " type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                <button class="bg-info" type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                <button class="bg-info" type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
 

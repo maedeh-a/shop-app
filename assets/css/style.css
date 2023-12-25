@@ -1,0 +1,13 @@
+
+ #myCarousel .carousel-indicators>button {
+    width: 8px;
+    height: 8px;
+    border: none !important;
+    border-radius: 100%;
+}
+.carousel-indicators>button:not(.active) {
+    background: #ddd !important;
+}
+.carousel-indicators{
+    height: 120px;
+}
