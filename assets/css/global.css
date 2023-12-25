@@ -84,11 +84,20 @@
         /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
         url('../fonts/ttf/IRANSansWeb.ttf') format('truetype');
 }
+html, body{
+    height: 100%;
+}
+html {
+    max-width: 576px;
+}
 body {
     font-family: IRANSans !important;
     font-weight: 300;
-
 }
-.mobile-maxw {
-    max-width: 768px;
+
+.h-60 {
+    height: 60% !important;
+}
+.h-65{
+    height: 65% !important;
 }
