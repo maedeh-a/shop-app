@@ -35,20 +35,22 @@
                     </button>
                 </div>
                 <div class="me-2">
-                    <button class="bg-success border-0 rounded-3 p-2">
+                    <button class="bg-success border-0 rounded-3 p-2 " 
+                    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                    aria-controls="offcanvasBottom">
                         <img src="../assets/img/setting-4.svg" alt="">
                     </button>
                 </div>
             </div>
-            <!-- Application tracking  -->
+            <!-- Application tracking رد شده   -->
             <div class="bg-white rounded-3 mb-2 mt-3 mx-3 shadow-bottom py-3 px-2">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center ">
                         <span class="text-dark fs-7 fw-bold me-2">کد پیگیری درخواست : </span>
                         <span class="text-dark fs-7 fw-bold me-1">122354562</span>
                     </div>
-                    <div class="bg-danger-subtle rounded-2">
-                        <span class=" text-danger text-tiny py-2 px-3">رد شده</span>
+                    <div class="bg-danger-subtle rounded-2 d-flex">
+                        <span class=" text-danger text-tiny-xs text-center py-2 px-1 min-w-60"> رد شده</span>
                     </div>
                    
                 </div>
@@ -83,15 +85,58 @@
                     </div>
                 </div>
             </div>
-            <!-- Application tracking  -->
-            <div class="bg-white rounded-3 mb-2 mt-3 mx-3 shadow-bottom py-3 px-2">
+            <!-- Application tracking تایید شده  -->
+            <div class="bg-white rounded-3 mb-2 mx-3 shadow-bottom py-3 px-2">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center ">
                         <span class="text-dark fs-7 fw-bold me-2">کد پیگیری درخواست : </span>
                         <span class="text-dark fs-7 fw-bold me-1">122354562</span>
                     </div>
-                    <div class="bg-success-subtle rounded-2">
-                        <span class=" text-success text-tiny py-2 px-3">تایید شده</span>
+                    <div class="bg-success-subtle rounded-2 d-flex">
+                        <span class=" text-success text-tiny-xs text-center py-2 px-1  min-w-60"> تایید شده</span>
+                    </div>
+            
+                </div>
+                <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
+                <div class="my-3 d-flex flex-column">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="bg-light rounded-3 p-2 ms-1">
+                            <img src="../assets/img/ticket.svg" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-between">
+                            <span class="text-dark fs-7 fw-bold  ">صدور کارت اعتباری آنلاین</span>
+                            <div class="d-flex align-items-center mt-2">
+                                <span class=" text-tiny text-light-emphasis">تاریخ درخواست :</span>
+                                <span class=" text-tiny text-light-emphasis"> 1402/2/13</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" d-flex align-items-center justify-content-center mt-3 bg-light py-2 px-3 rounded-3">
+                        <a href="" class="text-decoration-none text-dark fs-7 ">
+                            مشاهده جزئیات درخواست
+                            <span class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M15.5799 11.9999C15.5799 13.9799 13.9799 15.5799 11.9999 15.5799C10.0199 15.5799 8.41992 13.9799 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C13.9799 8.41992 15.5799 10.0199 15.5799 11.9999Z"
+                                        stroke="#3F434A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M11.9998 20.27C15.5298 20.27 18.8198 18.19 21.1098 14.59C22.0098 13.18 22.0098 10.81 21.1098 9.39997C18.8198 5.79997 15.5298 3.71997 11.9998 3.71997C8.46984 3.71997 5.17984 5.79997 2.88984 9.39997C1.98984 10.81 1.98984 13.18 2.88984 14.59C5.17984 18.19 8.46984 20.27 11.9998 20.27Z"
+                                        stroke="#3F434A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Application tracking  در حال بررسی  -->
+            <div class="bg-white rounded-3 mb-2 mx-3 shadow-bottom py-3 px-2">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center ">
+                        <span class="text-dark fs-7 fw-bold me-2">کد پیگیری درخواست : </span>
+                        <span class="text-dark fs-7 fw-bold me-1">122354562</span>
+                    </div>
+                    <div class="bg-warning rounded-2 d-flex">
+                        <span class=" text-white text-tiny-xs text-center py-2 px-1  min-w-60">  در حال بررسی</span>
                     </div>
             
                 </div>
@@ -127,10 +172,97 @@
                 </div>
             </div>
         </div>
+        <!-- advanced search -->
+        <div class=""> 
+            <div class="offcanvas offcanvas-bottom h-75" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">جستجوی پیشرفته</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body ">
+                    <!-- filter -->
+                    <div class="d-flex flex-column mb-3">
+                        <span class="text-dark fw-bold fs-7">فیلتر براساس وضعیت:</span>
+                        <div class="d-flex align-items-center  justify-content-between mt-2">
+                            <button class="bg-light border-0 text-tiny min-w-85 ms-1 px-2 py-2 text-nowrap rounded-3 text-dark ">
+                                در حال بررسی
+                            </button>
+                            <button class="bg-warning-subtle border-0 text-tiny min-w-85 me-1 px-2 py-2 text-nowrap rounded-3 text-success">
+                                تایید شده
+                                <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
+                            </button>
+                            <button class="bg-light border-0 text-tiny min-w-85 me-1 px-2 py-2 text-nowrap rounded-3 text-dark">
+                                رد شده
+                            </button>
+                            <button class="bg-light border-0 text-tiny min-w-85 ms-1 px-2 py-2 text-nowrap rounded-3 text-dark">
+                                لغو شده
+                            </button>
+                        </div>
+                        <!-- line -->
+                        <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
+                        
+                    </div>
+                    <!-- categories -->
+                    <div class="d-flex flex-column mt-4 mb-3">
+                        <span class="text-dark fw-bold fs-7 text-end">
+                            دسته بندی ها
+                        </span>
+                        <div class="d-flex align-items-center  justify-content-between mt-2">
+                            <button class="border-0 bg-light text-tiny ms-1 px-2 py-2 text-nowrap rounded-3 w-100 text-dark">اداری</button>
+                            <button class="border-0 bg-light text-tiny ms-1 px-2 py-2 text-nowrap rounded-3 w-100 text-dark">کارت رفاهی</button>
+                            <button class="border-0 bg-warning-subtle  text-tiny me-1 px-2 py-2 text-nowrap rounded-3 w-100 text-success">کارت اعتباری
+                                <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
+                            </button>
+                            
+                        </div>
+                        <!-- line -->
+                        <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
+                    </div>
+                    <!-- Recipient service: -->
+                    <div class="d-flex flex-column mt-4 mb-3">
+                        <span class="text-dark  fs-7 text-end fw-400">
+                            خدمات گیرنده:
+                        </span>
+                        <div class="d-flex align-items-center justify-content-start mt-3">
+                            <div class="d-flex align-items-center mx-3 ">
+                                <span class="text-dark fs-7 text-nowrap ms-2 fw-400">برای خودم</span>
+                                <label class="container position-relative d-flex mb-auto ">
+                                    <input type="radio" class="position-absolute" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="d-flex align-items-center mx-3">
+                                <span class="text-dark fs-7 text-nowrap ms-2 fw-400">برای شخص دیگری</span>
+                                <label class="container position-relative d-flex mb-auto ">
+                                    <input type="radio" class="position-absolute" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- line -->
+                        <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
+                        
+
+                    </div>
+                    <!-- time -->
+                    <div class="d-flex flex-column mt-4">
+                        <span class="text-dark fw-bold fs-7 text-end">انتخاب بازه زمانی:</span>
+                    </div>
+                    <div class="d-flex my-3">
+                        <button class="bg-success text-white text-tiny w-100 rounded-3 text-center py-3 border-0">اعمال فیلتر و نمایش</button>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
        
       
        
     </main>
-    
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- End script -->
 </body>
 </html>

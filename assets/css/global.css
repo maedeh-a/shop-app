@@ -113,5 +113,11 @@ box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px
 .fs-7{
     font-size: 14px !important;
 }
+.text-tiny-xs{
+    font-size: 10px;
+}
+.fw-400{
+    font-weight: 400;
+}
 
 
