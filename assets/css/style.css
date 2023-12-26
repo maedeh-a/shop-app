@@ -81,3 +81,15 @@
     border-radius: 50%;
     background: var(--bs-success);
 }
+.line-dashed-success{
+    border-top: 2px dashed var(--bs-success);
+    height: 2px;
+    width: 90%;
+}
+.min-w-163{
+    min-width: 160px;
+    
+}
+.reservation-panel{
+    transform: scale(0.9);
+}

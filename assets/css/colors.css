@@ -17,9 +17,21 @@
     --bs-warning:#FBBC05;
     --bs-warning-rgb: 251, 188, 5;
     --bs-warning-bg-subtle:#FEBA001A;
+    --bs-primary:#5AC8FA;
+    --bs-primary-rgb:90,200,250;
+    --bs-info:#FF5F00;
+    --bs-info-rgb: 355, 95, 0;
+    --bs-indigo:#252AA3;
+    --bs-pink:#FF3D5D;
 }
 
 main.dark {
     --background: #0E0C12;
     ;
+}
+.bg-indigo{
+    background-color: var(--bs-indigo) !important;
+}
+.bg-pink{
+    background-color: var(--bs-pink);
 }
