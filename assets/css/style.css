@@ -93,3 +93,7 @@
 .reservation-panel{
     transform: scale(0.9);
 }
+.progress{
+    height: 6px;
+    width: 85%;
+}
