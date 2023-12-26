@@ -2,14 +2,20 @@
 /* light mood colors */
 :root {
     --bs-success: #29D025;
+    --bs-success-bg-subtle:#29D0251F;
     --bs-success-rgb: 41, 208,37;
     --bs-secondary: #9F9E9A;
     --bs-secondary-rgb:159,158,154;
     --bs-dark: #1A1A1A;
     --bs-dark-rgb: 26, 26, 26;
-    --bs-light: #D9D9D9;
-    --bs-light-rgb: 217, 217, 217;
+    --bs-light: #fafafa;
+    --bs-light-rgb: 250, 250, 250;
     --background: #f3f3f3;
+    --bs-danger:#FF3D5D;
+    --bs-dander-rgb:255,61,93;
+    --bs-danger-bg-subtle:#FF7F7430;
+    --bs-warning:#FBBC05;
+    --bs-warning-rgb: 251, 188, 5;
 }
 
 main.dark {
