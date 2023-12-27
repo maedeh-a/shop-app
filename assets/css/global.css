@@ -125,5 +125,25 @@ box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px
 .fw-200{
     font-weight: 200;
 }
+.h-35{
+    height: 35%;
+}
+.bg-gradient-blue{
+    background:  linear-gradient(135deg, #30BEB6 0%, #3069BE 100%);
+}
+.bg-Gradient {
+    background: linear-gradient(135deg, #29D025 0%, #30BE9C 100%);
+}
 
+.text-Gradient-blue {
+    color: linear-gradient();
+    background: -webkit-linear-gradient(135deg,
+        #30BEB6 0%,
+        #3069BE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.transform-scale{
+    transform: scale(0.9);
+}
 
