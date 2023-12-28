@@ -49,7 +49,7 @@ label.container input {
     height: 20px;
     width: 20px;
     background-color: white;
-    border: 1px solid #eee;
+    border: 1px solid var(--bs-success);
     border-radius: 50%;
 }
 

@@ -128,8 +128,8 @@ box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px
 .h-28{
     height: 28%;
 }
-.h-80{
-    height: 80% !important;
+.h-85{
+    height: 85% !important;
 }
 .bg-gradient-blue{
     background:  linear-gradient(135deg, #30BEB6 0%, #3069BE 100%);
@@ -148,5 +148,8 @@ box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px
 }
 .transform-scale{
     transform: scale(0.9);
+}
+.border-secondary-subtle {
+    border-color: var(--bs-secondary-bg-subtle) !important;
 }
 
