@@ -1,7 +1,7 @@
 $(function () {
- 
-  $("#rateYo").rateYo({
-    rating: 3.6
-  });
- 
+
+    $("#rateYo").rateYo({
+        rating: 3.6
+    });
+
 });

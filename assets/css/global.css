@@ -5,56 +5,56 @@
     font-family: IRANSans;
     font-style: normal;
     font-weight: 900;
-    src: url('../fonts/eot/IRANSansWeb_Black.eot');
-    src: url('../fonts/eot/IRANSansWeb_Black.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/eot/IRANSansWeb(FaNum)_Black.eot');
+    src: url('../fonts/eot/IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'),
         /* IE6-8 */
-        url('../fonts/woff2/IRANSansWeb_Black.woff2') format('woff2'),
+        url('../fonts/woff2/IRANSansWeb(FaNum)_Black.woff2') format('woff2'),
         /* FF39+,Chrome36+, Opera24+*/
-        url('../fonts/woff/IRANSansWeb_Black.woff') format('woff'),
+        url('../fonts/woff/IRANSansWeb(FaNum)_Black.woff') format('woff'),
         /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-        url('../fonts/ttf/IRANSansWeb_Black.ttf') format('truetype');
+        url('../fonts/ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
 }
 
 @font-face {
     font-family: IRANSans;
     font-style: normal;
     font-weight: bold;
-    src: url('../fonts/eot/IRANSansWeb_Bold.eot');
-    src: url('../fonts/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/eot/IRANSansWeb(FaNum)_Bold.eot');
+    src: url('../fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'),
         /* IE6-8 */
-        url('../fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'),
+        url('../fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),
         /* FF39+,Chrome36+, Opera24+*/
-        url('../fonts/woff/IRANSansWeb_Bold.woff') format('woff'),
+        url('../fonts/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'),
         /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-        url('../fonts/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+        url('../fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: IRANSans;
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/eot/IRANSansWeb_Medium.eot');
-    src: url('../fonts/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/eot/IRANSansWeb(FaNum)_Medium.eot');
+    src: url('../fonts/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'),
         /* IE6-8 */
-        url('../fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2'),
+        url('../fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'),
         /* FF39+,Chrome36+, Opera24+*/
-        url('../fonts/woff/IRANSansWeb_Medium.woff') format('woff'),
+        url('../fonts/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'),
         /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-        url('../fonts/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+        url('../fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
 }
 
 @font-face {
     font-family: IRANSans;
     font-style: normal;
     font-weight: 300;
-    src: url('../fonts/eot/IRANSansWeb_Light.eot');
-    src: url('../fonts/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/eot/IRANSansWeb(FaNum)_Light.eot');
+    src: url('../fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'),
         /* IE6-8 */
-        url('../fonts/woff2/IRANSansWeb_Light.woff2') format('woff2'),
+        url('../fonts/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),
         /* FF39+,Chrome36+, Opera24+*/
-        url('../fonts/woff/IRANSansWeb_Light.woff') format('woff'),
+        url('../fonts/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'),
         /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-        url('../fonts/ttf/IRANSansWeb_Light.ttf') format('truetype');
+        url('../fonts/ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
 }
 
 @font-face {
@@ -83,6 +83,24 @@
         url('../fonts/woff/IRANSansWeb.woff') format('woff'),
         /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
         url('../fonts/ttf/IRANSansWeb.ttf') format('truetype');
+}
+/* Farsi digits font */
+
+@font-face {
+    font-family: IranYekanFarsiNumbers;
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/eot/IRANSansWeb(FaNum)_Medium.eot');
+    src: url('../fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+        url('../fonts/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+    unicode-range: U+30-39;
+}
+
+* {
+    font-family: IranYekanFarsiNumbers, IRANSans;
 }
 html, body{
     height: 100%;
@@ -151,5 +169,8 @@ box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px
 }
 .border-secondary-subtle {
     border-color: var(--bs-secondary-bg-subtle) !important;
+}
+* a{
+    text-decoration: none;
 }
 
