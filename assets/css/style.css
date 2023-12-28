@@ -112,3 +112,8 @@ label.container input {
 #offcanvasBottom{
     border-radius:24px 24px 0 0 ;
 }
+.time-select button.bg-light.border-0.active{
+    border: 1px solid var(--bs-success) !important;
+    color: var(--bs-success) !important;
+    background-color: transparent !important;
+}
