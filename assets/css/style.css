@@ -317,3 +317,7 @@ label.container input {
     left: 8px;
     opacity: 1;
 }
+.collapsed .up-collapsed{
+    transform: rotate(180deg);
+    transition: 0.2s;
+}
