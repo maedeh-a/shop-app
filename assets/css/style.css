@@ -338,3 +338,10 @@ label.container input {
     border-radius: 50%;
     transform: translateY(10px);
 }
+.noUi-connects{
+    --bs-component-active-bg: var(--bs-success);
+}
+div.noUi-horizontal .noUi-tooltip{
+    bottom: unset;
+    top: 120%;
+}
