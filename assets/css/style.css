@@ -1,27 +1,32 @@
-
- #myCarousel .carousel-indicators>button {
+#myCarousel .carousel-indicators>button {
     width: 8px;
     height: 8px;
     border: none !important;
     border-radius: 100%;
 }
+
 .carousel-indicators>button:not(.active) {
     background: #ddd !important;
 }
-.carousel-indicators{
+
+.carousel-indicators {
     height: 120px;
 }
 
 /*  My request list */
-.line7865{
+.line7865 {
     height: 1px;
 }
-.min-w-60{
-    min-width: 68px; max-width: 68px;
+
+.min-w-60 {
+    min-width: 68px;
+    max-width: 68px;
 }
-.min-w-85{
+
+.min-w-85 {
     min-width: 83px;
 }
+
 /* End  My request list */
 /* The container */
 label.container {
@@ -31,9 +36,11 @@ label.container {
     -ms-user-select: none;
     user-select: none;
 }
-.payment-lines .container{
+
+.payment-lines .container {
     transform: translateY(-9px);
 }
+
 /* Hide the browser's default radio button */
 label.container input {
     opacity: 0;
@@ -84,39 +91,48 @@ label.container input {
     border-radius: 50%;
     background: var(--bs-success);
 }
-.line-dashed-success{
+
+.line-dashed-success {
     border-top: 2px dashed var(--bs-success);
     height: 2px;
     width: 90%;
     transform: translateY(-9px);
 }
-.min-w-163{
+
+.min-w-163 {
     min-width: 160px;
-    
+
 }
-.reservation-panel{
+
+.reservation-panel {
     transform: scale(0.9);
 }
-.progress{
+
+.progress {
     height: 6px;
     width: 85%;
 }
-.star4512{
-    top:15px;
+
+.star4512 {
+    top: 15px;
     left: 20px;
 }
+
 .star4513 {
     bottom: 15px;
     left: 20px;
 }
-#offcanvasBottom{
-    border-radius:24px 24px 0 0 ;
+
+#offcanvasBottom {
+    border-radius: 24px 24px 0 0;
 }
-.time-select button.bg-light.border-0.active{
+
+.time-select button.bg-light.border-0.active {
     border: 1px solid var(--bs-success) !important;
     color: var(--bs-success) !important;
     background-color: transparent !important;
 }
+
 /* The container */
 .container-tick {
     padding-left: 35px;
@@ -181,18 +197,22 @@ label.container input {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
 .text-input1 {
     right: 145px;
     top: 7px;
 }
+
 .text-input2 {
     right: 74px;
     top: 7px;
 }
+
 .text-input3 {
     right: 49px;
     top: 7px;
 }
+
 .line-img::after {
     position: absolute;
     content: " ";
@@ -202,15 +222,17 @@ label.container input {
     height: 50%;
     bottom: -25px;
 }
-.line7878::after{
+
+.line7878::after {
     position: absolute;
     content: " ";
     width: 80%;
     height: 1px;
-    background-color:var(--bs-secondary-bg-subtle) !important;
-    bottom:0;
+    background-color: var(--bs-secondary-bg-subtle) !important;
+    bottom: 0;
     left: 0;
 }
+
 .right-border652::after {
     border-right: 1px dashed var(--bs-success);
     width: 5px;
@@ -220,6 +242,7 @@ label.container input {
     height: 50%;
     bottom: 20px;
 }
+
 .circle-bg-right {
     height: 50px;
     width: 50px;
@@ -230,6 +253,7 @@ label.container input {
     position: relative;
 
 }
+
 .circle-bg-right::after {
     content: " ";
     position: absolute;
@@ -239,6 +263,7 @@ label.container input {
     width: 25px;
     right: 0;
 }
+
 .circle-bg-left {
     height: 50px;
     width: 50px;
@@ -259,11 +284,36 @@ label.container input {
     width: 25px;
     left: 0;
 }
-.categories-select button.bg-light.text-dark.active{
+
+.categories-select button.bg-light.text-dark.active {
     color: var(--bs-success) !important;
     background-color: var(--bs-warning-bg-subtle) !important;
 }
+
 .filter-select button.bg-light.text-dark.active {
     color: var(--bs-success) !important;
     background-color: var(--bs-warning-bg-subtle) !important;
+}
+
+[toggle-button]{
+    position: relative;
+    flex-grow: 1;
+    transition: all 0.2s;
+}
+[toggle-button] img {
+    top: calc(50% - 7.5px);
+    position: absolute;
+    left: 0;
+    transition:all 0.2s;
+    opacity: 0;
+}
+
+[toggle-button].active {
+    background-color: var(--bs-warning-bg-subtle);
+    padding-left: 22px !important;
+}
+
+[toggle-button].active img {
+    left: 8px;
+    opacity: 1;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +13,15 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
 </head>
+
 <body>
-  <main class="mx-auto h-100 d-flex flex-column pb-2">
+    <main class="mx-auto h-100 d-flex flex-column pb-2">
         <!-- My request list -->
         <div class="d-flex flex-column">
             <header class="d-flex align-items-center justify-content-center mx-3 pt-3 flex-column">
                 <div class="position-relative d-flex align-items-center justify-content-center w-100">
                     <span class="text-dark fw-bold">
-                    لیست رزوهای من
+                        لیست رزوهای من
                     </span>
                     <a href="" class="position-absolute start-0">
                         <img src="../assets/img/arrow-left.svg" alt="">
@@ -54,25 +56,29 @@
                     </button>
                 </div>
                 <div class="d-flex flex-wrap align-content-center">
-                   <div class="border border-1 mx-1 border-secondary-subtle px-2 py-1 d-flex align-items-center rounded-3 my-1">
+                    <div
+                        class="border border-1 mx-1 border-secondary-subtle px-2 py-1 d-flex align-items-center rounded-3 my-1">
                         <button class=" text-tiny-xs text-secondary bg-transparent border-0 d-flex align-items-center">
                             باشگاه بدنسازی کسرا
                             <img src="../assets/img/rotate-left-se.svg" class="me-1" alt="">
                         </button>
-                   </div>
-                    <div class="border border-1 mx-1 border-secondary-subtle px-1  py-1 rounded-3 d-flex align-items-center my-1">
+                    </div>
+                    <div
+                        class="border border-1 mx-1 border-secondary-subtle px-1  py-1 rounded-3 d-flex align-items-center my-1">
                         <button class=" text-tiny-xs text-secondary bg-transparent border-0 d-flex align-items-center">
                             استخر رکورد
                             <img src="../assets/img/rotate-left-se.svg" class="me-1" alt="">
                         </button>
                     </div>
-                    <div class="border border-1 mx-1 border-secondary-subtle px-1  py-1 rounded-3 d-flex align-items-center my-1">
+                    <div
+                        class="border border-1 mx-1 border-secondary-subtle px-1  py-1 rounded-3 d-flex align-items-center my-1">
                         <button class=" text-tiny-xs text-secondary bg-transparent border-0 d-flex align-items-center">
                             استخر کوثر
                             <img src="../assets/img/rotate-left-se.svg" class="me-1" alt="">
                         </button>
                     </div>
-                    <div class="border border-1 mx-1 border-secondary-subtle px-1  py-1 rounded-3 d-flex align-items-center my-1">
+                    <div
+                        class="border border-1 mx-1 border-secondary-subtle px-1  py-1 rounded-3 d-flex align-items-center my-1">
                         <button class=" text-tiny-xs text-secondary bg-transparent border-0 d-flex align-items-center">
                             باشگاه
                             <img src="../assets/img/rotate-left-se.svg" class="me-1" alt="">
@@ -84,10 +90,10 @@
             <div class="bg-white rounded-3 mb-2 mt-3 mx-3 shadow-bottom py-3 px-2">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center ">
-                        <span class="text-dark fs-7 fw-bold me-2">کد پیگیری  : </span>
+                        <span class="text-dark fs-7 fw-bold me-2">کد پیگیری : </span>
                         <span class="text-dark fs-7 fw-bold me-1">122354562</span>
                     </div>
-                
+
                 </div>
                 <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
                 <div class="my-3 d-flex flex-column">
@@ -117,12 +123,12 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class=" d-flex align-items-center justify-content-center mt-3 bg-light py-2 px-3 rounded-3">
                         <a href="" class="text-decoration-none text-dark fs-7 ">
-                        مشاهده جزئیات رزرو
-                           
+                            مشاهده جزئیات رزرو
+
                         </a>
                     </div>
                 </div>
@@ -134,7 +140,7 @@
                         <span class="text-dark fs-7 fw-bold me-2">کد پیگیری : </span>
                         <span class="text-dark fs-7 fw-bold me-1">122354562</span>
                     </div>
-            
+
                 </div>
                 <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
                 <div class="my-3 d-flex flex-column">
@@ -164,12 +170,12 @@
                                 </div>
                             </div>
                         </div>
-            
+
                     </div>
                     <div class=" d-flex align-items-center justify-content-center mt-3 bg-light py-2 px-3 rounded-3">
                         <a href="" class="text-decoration-none text-dark fs-7 ">
                             مشاهده جزئیات رزرو
-            
+
                         </a>
                     </div>
                 </div>
@@ -187,44 +193,58 @@
                     <!-- filter -->
                     <div class="d-flex flex-column mb-3">
                         <span class="text-dark fw-bold fs-7">فیلتر براساس وضعیت:</span>
-                        <div class="d-flex align-items-center  justify-content-between mt-2 filter-select">
-                            <button
-                                class="bg-light border-0 text-tiny min-w-85 ms-1 px-2 py-2 text-nowrap rounded-3 text-dark ">
+                        <div class="d-flex align-items-center  justify-content-between mt-2 filter-select active gap-2"
+                            toggle-button-group>
+                            <button toggle-button
+                                class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark ">
                                 در حال بررسی
+                                <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
-                            <button
-                                class="bg-light active border-0 text-tiny min-w-85 me-1 px-2 py-2 text-nowrap rounded-3 text-dark ">
+                            <button toggle-button
+                                class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark ">
                                 تایید شده
                                 <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
-                            <button class="bg-light border-0 text-tiny min-w-85 me-1 px-2 py-2 text-nowrap rounded-3 text-dark">
+                            <button toggle-button
+                                class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark">
                                 رد شده
+                                <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
-                            <button class="bg-light border-0 text-tiny min-w-85 ms-1 px-2 py-2 text-nowrap rounded-3 text-dark">
+                            <button toggle-button
+                                class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark">
                                 لغو شده
+                                <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
                         </div>
                         <!-- line -->
                         <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
-        
+
                     </div>
                     <!-- categories -->
                     <div class="d-flex flex-column mt-4 mb-3">
                         <span class="text-dark fw-bold fs-7 text-end">
                             دسته بندی ها
                         </span>
-                        <div class="d-flex align-items-center  justify-content-between mt-2 categories-select">
+                        <div class="d-flex align-items-center  justify-content-between mt-2 categories-select gap-2" toggle-button-group>
                             <button
-                                class="border-0 bg-light text-tiny ms-1 px-2 py-2 text-nowrap rounded-3 w-100 text-dark">اداری</button>
+                                toggle-button
+                                class="border-0 bg-light text-tiny py-2 text-nowrap rounded-3 w-100 text-dark">
+                                اداری
+                                <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
+                            </button>
                             <button
-                                class="border-0 bg-light text-tiny ms-1 px-2 py-2 text-nowrap rounded-3 w-100 text-dark">کارت
-                                رفاهی</button>
+                            toggle-button
+                                class="border-0 bg-light text-tiny py-2 text-nowrap rounded-3 w-100 text-dark">کارت
+                                رفاهی
+                                <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
+                            </button>
                             <button
-                                class="border-0 active text-dark bg-light  text-tiny me-1 px-2 py-2 text-nowrap rounded-3 w-100">کارت
+                            toggle-button
+                                class="border-0 active text-dark bg-light  text-tiny me-1 py-2 text-nowrap rounded-3 w-100">کارت
                                 اعتباری
                                 <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
-        
+
                         </div>
                         <!-- line -->
                         <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
@@ -252,33 +272,34 @@
                         </div>
                         <!-- line -->
                         <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
-        
-        
+
+
                     </div>
                     <!-- time -->
                     <div class="d-flex flex-column mt-4">
                         <span class="text-dark fw-bold fs-7 text-end">انتخاب بازه زمانی:</span>
                     </div>
                     <div class=" w-100">
-                       
-                        
-                       
-                        <p >
-                        
+
+
+
+                        <p>
+
                             <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
                         </p>
                         <div id="slider-range"></div>
                     </div>
                     <div class="d-flex my-3">
-                        <button class="bg-success text-white text-tiny w-100 rounded-3 text-center py-3 border-0">اعمال فیلتر و
+                        <button class="bg-success text-white text-tiny w-100 rounded-3 text-center py-3 border-0">اعمال
+                            فیلتر و
                             نمایش</button>
                     </div>
-        
+
                 </div>
             </div>
         </div>
-  </main>
-    
+    </main>
+
 
 
 
@@ -290,23 +311,25 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
         integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
     <!-- انتخاب بازه زمانی script -->
-        <script>
-            $(function () {
-                $("#slider-range").slider({
-                    range: true,
-                    min: 1,
-                    max: 45,
-                    values: [3, 30],
-                    slide: function (event, ui) {
-                        $("#amount").val("روز" + ui.values[0] + " - روز" + ui.values[1]);
-                    }
-                });
-                $("#amount").val("روز" + $("#slider-range").slider("values", 0) +
-                    " - روز" + $("#slider-range").slider("values", 1));
+    <script>
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 1,
+                max: 45,
+                values: [3, 30],
+                slide: function (event, ui) {
+                    $("#amount").val("روز" + ui.values[0] + " - روز" + ui.values[1]);
+                }
             });
-        </script>
+            $("#amount").val("روز" + $("#slider-range").slider("values", 0) +
+                " - روز" + $("#slider-range").slider("values", 1));
+        });
+    </script>
     <!-- End script -->
-    
+
 </body>
+
 </html>
