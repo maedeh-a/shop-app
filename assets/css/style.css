@@ -299,6 +299,8 @@ label.container input {
     position: relative;
     flex-grow: 1;
     transition: all 0.2s;
+    background-color: var(--bs-light);
+    color: black;
 }
 [toggle-button] img {
     top: calc(50% - 7.5px);
@@ -311,6 +313,7 @@ label.container input {
 [toggle-button].active {
     background-color: var(--bs-warning-bg-subtle);
     padding-left: 22px !important;
+    color: var(--bs-success);
 }
 
 [toggle-button].active img {
@@ -320,4 +323,18 @@ label.container input {
 .collapsed .up-collapsed{
     transform: rotate(180deg);
     transition: 0.2s;
+} 
+.select-service-swiper{
+--swiper-navigation-sides-offset: -6px;
+}
+.select-service-swiper .swiper-button-next::after, .select-service-swiper .swiper-button-prev::after{
+    transform: scale(0.3);
+    color: var(--bs-success);
+}
+.select-service-swiper .swiper-button-next, .select-service-swiper .swiper-button-prev{
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--bs-success);
+    border-radius: 50%;
+    transform: translateY(10px);
 }
