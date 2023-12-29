@@ -193,3 +193,77 @@ label.container input {
     right: 49px;
     top: 7px;
 }
+.line-img::after {
+    position: absolute;
+    content: " ";
+    border-right: 1px dashed var(--bs-success);
+    left: 10px;
+    width: 10px;
+    height: 50%;
+    bottom: -25px;
+}
+.line7878::after{
+    position: absolute;
+    content: " ";
+    width: 80%;
+    height: 1px;
+    background-color:var(--bs-secondary-bg-subtle) !important;
+    bottom:0;
+    left: 0;
+}
+.right-border652::after {
+    border-right: 1px dashed var(--bs-success);
+    width: 5px;
+    position: absolute;
+    content: " ";
+    right: -12px;
+    height: 50%;
+    bottom: 20px;
+}
+.circle-bg-right {
+    height: 50px;
+    width: 50px;
+    bottom: 156px;
+    right: -27px;
+    border: 1px solid var(--bs-secondary-bg-subtle);
+    border-radius: 50%;
+    position: relative;
+
+}
+.circle-bg-right::after {
+    content: " ";
+    position: absolute;
+    background-color: white;
+    height: 60px;
+    top: -5px;
+    width: 25px;
+    right: 0;
+}
+.circle-bg-left {
+    height: 50px;
+    width: 50px;
+    bottom: 156px;
+    left: -27px;
+    border: 1px solid var(--bs-secondary-bg-subtle);
+    border-radius: 50%;
+    position: relative;
+
+}
+
+.circle-bg-left::after {
+    content: " ";
+    position: absolute;
+    background-color: white;
+    height: 60px;
+    top: -5px;
+    width: 25px;
+    left: 0;
+}
+.categories-select button.bg-light.text-dark.active{
+    color: var(--bs-success) !important;
+    background-color: var(--bs-warning-bg-subtle) !important;
+}
+.filter-select button.bg-light.text-dark.active {
+    color: var(--bs-success) !important;
+    background-color: var(--bs-warning-bg-subtle) !important;
+}
