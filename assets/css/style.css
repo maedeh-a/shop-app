@@ -98,6 +98,12 @@ label.container input {
     width: 90%;
     transform: translateY(-9px);
 }
+.line-dashed-secondary {
+    border-top: 1px dashed var(--bs-secondary);
+    height: 2px;
+    width: 90%;
+
+}
 
 .min-w-163 {
     min-width: 160px;

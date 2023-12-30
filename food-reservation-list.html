@@ -36,7 +36,7 @@
                 </div>
                 <div class="me-2">
                     <button class="bg-success border-0 rounded-3 p-2 " type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                        data-bs-target="#offcanvasBottomStep1" aria-controls="offcanvasBottomStep1">
                         <img src="../assets/img/setting-4.svg" alt="">
                     </button>
                 </div>
@@ -164,7 +164,7 @@
         </div>
         <!-- advanced search -->
         <div class="">
-            <div class="offcanvas offcanvas-bottom h-75" tabindex="-1" id="offcanvasBottom"
+            <div class="offcanvas offcanvas-bottom h-85 rounded-top-5" tabindex="-1" id="offcanvasBottomStep1"
                 aria-labelledby="offcanvasBottomLabel">
                 <div class="offcanvas-header d-flexa align-items-center pb-2 ">
                 
@@ -188,21 +188,14 @@
                             toggle-button-group>
                             <button toggle-button
                                 class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark active">
-                                در حال بررسی
+                            استفاده شده
                                 <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
                             <button toggle-button class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark ">
-                                تایید شده
+                                رزرو فعال
                                 <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
-                            <button toggle-button class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark">
-                                رد شده
-                                <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
-                            </button>
-                            <button toggle-button class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark">
-                                لغو شده
-                                <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
-                            </button>
+                           
                         </div>
                         <!-- line -->
                         <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
@@ -217,17 +210,21 @@
                             toggle-button-group>
                             <button toggle-button
                                 class="border-0 bg-light text-tiny py-2 text-nowrap rounded-3 w-100 text-dark">
-                                اداری
+                                صبحانه
                                 <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
                             <button toggle-button
-                                class="border-0 bg-light text-tiny py-2 text-nowrap rounded-3 w-100 text-dark">کارت
-                                رفاهی
+                                class="border-0 bg-light text-tiny py-2 text-nowrap rounded-3 w-100 text-dark">
+                                ناهار
                                 <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
                             <button toggle-button
-                                class="border-0 active text-dark bg-light  text-tiny me-1 py-2 text-nowrap rounded-3 w-100">کارت
-                                اعتباری
+                                class="border-0 active text-dark bg-light  text-tiny me-1 py-2 text-nowrap rounded-3 w-100">
+                                شام
+                                <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
+                            </button>
+                            <button toggle-button class="border-0  text-dark bg-light  text-tiny me-1 py-2 text-nowrap rounded-3 w-100">
+                                کافی شاپ
                                 <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
         
@@ -238,22 +235,24 @@
                     <!-- Recipient service: -->
                     <div class="d-flex flex-column mt-4 mb-3">
                         <span class="text-dark  fs-7 text-end fw-400">
-                            خدمات گیرنده:
+                            محل دریافت غذا:
                         </span>
                         <div class="d-flex align-items-center justify-content-start mt-3">
                             <div class="d-flex align-items-center mx-3 ">
-                                <span class="text-dark fs-7 text-nowrap ms-2 fw-400">برای خودم</span>
+                               
                                 <label class="container position-relative d-flex mb-auto ">
                                     <input type="radio" class="position-absolute" checked="checked" name="radio">
                                     <span class="checkmark"></span>
                                 </label>
+                                <span class="text-dark fs-7 text-nowrap ms-2 fw-400"> بیرون بر</span>
                             </div>
                             <div class="d-flex align-items-center mx-3">
-                                <span class="text-dark fs-7 text-nowrap ms-2 fw-400">برای شخص دیگری</span>
+                                
                                 <label class="container position-relative d-flex mb-auto ">
                                     <input type="radio" class="position-absolute" checked="checked" name="radio">
                                     <span class="checkmark"></span>
                                 </label>
+                                <span class="text-dark fs-7 text-nowrap ms-2 fw-400"> رستوران</span>
                             </div>
                         </div>
                         <!-- line -->
@@ -276,11 +275,202 @@
         
                     </div>
                     <div class="d-flex my-3">
-                        <button class="bg-success text-white text-tiny w-100 rounded-3 text-center py-3 border-0">اعمال
+                        <button class="bg-success text-white text-tiny w-100 rounded-3 text-center py-3 border-0"
+                        type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottomStep2" aria-controls="offcanvasBottomStep#offcanvasBottomStep2">اعمال
                             فیلتر و
                             نمایش</button>
                     </div>
         
+                </div>
+            </div>
+            <!-- step2  انتخاب ساعت سرویس مورد نظر -->
+            <div class="offcanvas offcanvas-bottom h-85 rounded-top-5" tabindex="-1" id="offcanvasBottomStep2"
+                aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header d-flexa align-items-center pb-2 ">
+                    <!--active  -->
+                    <div class="d-none">
+                        <div class="bg-success-subtle rounded-2 d-flex">
+                            <span class=" text-success text-tiny-xs text-center py-2 px-1 min-w-60"> رزرو فعال</span>
+                        </div>
+                    </div>
+                    
+                    <!-- used -->
+                    <div class="bg-danger-subtle rounded-2 d-flex">
+                        <span class=" text-danger text-tiny-xs text-center py-2 px-1 min-w-60"> استفاده شده </span>
+                    </div>
+                    <header class="d-flex align-items-center justify-content-center   flex-colum w-100">
+                        <div class="position-relative d-flex align-items-center justify-content-center w-100">
+                            <div class="d-flex align-items-center justify-content-center w-100 ms-3 ">
+                                <div class="d-flex flex-grow-1 w-100 text-center">
+                                    <div class="text-center w-100">
+                                        <span class="text-dark text-tiny fw-400 text-center">
+                                            شماره پیگیری:
+                                        </span>
+                                        <span class="text-dark text-tiny fw-400 text-center">
+                                            14252165
+                                        </span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="bg-danger-subtle d-flex align-items-center rounded-3 px-1">
+                                    <button class="bg-transparent border-0">
+                                        <img src="../assets/img/trash.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="">
+                                    <button class="bg-transparent border-0">
+                                        <img src="../assets/img/more.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                           
+                            <a href="" class="position-absolute start-0">
+                                <img src="../assets/img/arrow-left.svg" alt="">
+                            </a>
+                        </div>
+                
+                    </header>
+                
+                </div>
+                <div class="offcanvas-body ">
+                    <!-- Desired service hours -->
+                    <div class="d-flex flex-column mb-3 mx-3">
+                       
+                        <div class="d-flex align-items-center justify-content-start mb-2
+                         border-1 py-2 border-bottom border-secondary-subtle">
+                            <div class="p-2 ms-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path
+                                        d="M14.0004 15.6684C16.0107 15.6684 17.6404 14.0387 17.6404 12.0284C17.6404 10.0181 16.0107 8.38843 14.0004 8.38843C11.99 8.38843 10.3604 10.0181 10.3604 12.0284C10.3604 14.0387 11.99 15.6684 14.0004 15.6684Z"
+                                        stroke="#29D025" stroke-width="1.5" />
+                                    <path
+                                        d="M4.22364 9.90492C6.52198 -0.198412 21.4903 -0.186745 23.777 9.91659C25.1186 15.8433 21.432 20.8599 18.2003 23.9633C15.8553 26.2266 12.1453 26.2266 9.78865 23.9633C6.56865 20.8599 2.88198 15.8316 4.22364 9.90492Z"
+                                        stroke="#29D025" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <div class="d-flex flex-column align-items-start justify-content-start">
+                                <span class="text-success fs-7"> محل سرو غذای سازمانی:</span>
+                                <div class="d-flex align-items-center">
+                                    <span class=" text-tiny text-light-emphasis">رستوران مرکزی</span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-start mb-2
+                         border-1 py-2 border-bottom border-secondary-subtle">
+                            <div class="p-2 ms-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                    <path d="M11.333 2.58325V6.45825" stroke="#29D025" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M22.667 2.58325V6.45825" stroke="#29D025" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4.95801 11.7412H29.0413" stroke="#29D025" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M31.1663 24.5417C31.1663 25.5104 30.8688 26.4275 30.3447 27.2025C29.3672 28.7008 27.568 29.7083 25.4997 29.7083C24.0688 29.7083 22.7655 29.2304 21.7738 28.4167C21.3347 28.0808 20.9522 27.6675 20.6547 27.2025C20.1305 26.4275 19.833 25.5104 19.833 24.5417C19.833 21.6871 22.3688 19.375 25.4997 19.375C27.1997 19.375 28.7155 20.0596 29.7497 21.1316C30.628 22.0487 31.1663 23.2371 31.1663 24.5417Z"
+                                        stroke="#29D025" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M23.29 24.5417L24.6925 25.8205L27.71 23.2759" stroke="#29D025" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M29.75 10.9791V21.1316C28.7158 20.0595 27.2 19.3749 25.5 19.3749C22.3692 19.3749 19.8333 21.687 19.8333 24.5416C19.8333 25.5103 20.1308 26.4274 20.655 27.2024C20.9525 27.6674 21.335 28.0808 21.7742 28.4166H11.3333C6.375 28.4166 4.25 25.8333 4.25 21.9583V10.9791C4.25 7.10409 6.375 4.52075 11.3333 4.52075H22.6667C27.625 4.52075 29.75 7.10409 29.75 10.9791Z"
+                                        stroke="#29D025" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.9935 17.6959H17.0062" stroke="#29D025" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.7504 17.6959H11.7631" stroke="#29D025" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.7504 21.5709H11.7631" stroke="#29D025" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="d-flex flex-column align-items-start justify-content-start">
+                                <span class="text-success fs-7">تاریخ رزرو:</span>
+                                <div class="d-flex align-items-center">
+                                    <span class=" text-tiny text-light-emphasis">27 آبمانماه 1402</span>
+                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-start mb-2
+                         border-1 py-2 border-bottom border-secondary-subtle">
+                            <div class="p-2 ms-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="33" viewBox="0 0 34 33" fill="none">
+                                    <path
+                                        d="M29.3962 18.2188C29.3962 24.86 23.8428 30.25 17.0003 30.25C10.1578 30.25 4.60449 24.86 4.60449 18.2188C4.60449 11.5775 10.1578 6.1875 17.0003 6.1875C23.8428 6.1875 29.3962 11.5775 29.3962 18.2188Z"
+                                        stroke="#29D025" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M17 11V17.875" stroke="#29D025" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.75 2.75H21.25" stroke="#29D025" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="d-flex flex-column align-items-start justify-content-start">
+                                <span class="text-success fs-7">سانس رزرو:</span>
+                                <div class="d-flex align-items-center">
+                                    <span class=" text-tiny text-light-emphasis"> شیفت صبح</span>
+                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- rules -->
+                    <div class="d-flex align-items-center mt-4 mb-3 justify-content-center gap-2">
+                            <span class="bg-danger-subtle rounded-2 text-danger-emphasis text-tiny text-center py-1 px-2">
+                                قوانین:
+                            </span>
+                            <span class="text-danger-emphasis text-tiny text-center">
+                                تا 12 ساعت قبل قابل حذف و ویرایش می باشد.
+                            </span>
+            
+                        </div>
+                       
+                    <!-- Recipient service: -->
+                    <div class="d-flex flex-column mt-4 mb-3  gap-2 px-3 rounded-bottom-3 bg-white shadow-bottom pb-3">
+                       
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center ">
+                                <span class="text-nowrap fs-7 text-secondary mx-1">پنیر </span>
+                                -
+                                <span class="text-nowrap fs-7 text-secondary mx-1">کره عسل</span>
+                                -
+                                <span class="text-nowrap fs-7 text-secondary mx-1">آبمیوه</span>
+                            </div>
+                            <div class="line-dashed-secondary py-auto mx-2"></div>
+                            <div class="border border-1 border-secondary me-2 rounded-2 d-flex">
+                                <span class="text-secondary px-2 py-1  text-center fs-7 min-w-60">صبحانه</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center ">
+                                <span class="text-nowrap fs-7 text-secondary mx-1"> زرشک پلو با مرغ</span>
+                                -
+                                <span class="text-nowrap fs-7 text-secondary mx-1">نوشابه</span>
+                                -
+                                <span class="text-nowrap fs-7 text-secondary mx-1">سالاد</span>
+                            </div>
+                            <div class="line-dashed-secondary py-auto mx-2"></div>
+                            <div class="border border-1 border-secondary me-2 rounded-2 d-flex">
+                                <span class="text-secondary px-2 py-1  text-center fs-7 min-w-60">ناهار</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center ">
+                                <span class="text-nowrap fs-7 text-secondary mx-1">کتلت  </span>
+                                -
+                                <span class="text-nowrap fs-7 text-secondary mx-1"> دوغ</span>
+                                -
+                                <span class="text-nowrap fs-7 text-secondary mx-1"></span>
+                            </div>
+                            <div class="line-dashed-secondary py-auto mx-2"></div>
+                            <div class="border border-1 border-secondary me-2 rounded-2 d-flex">
+                                <span class="text-secondary px-2 py-1  text-center fs-7 min-w-60">شام</span>
+                            </div>
+                        </div>
+            
+            
+                    </div>
+                    
+                    
+            
                 </div>
             </div>
         </div>
@@ -303,5 +493,25 @@
         integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
     <script src="https://mobile.rasmitar.ir/frontend/assets/plugins/global/plugins.bundle.js"></script>
     <script src="assets/js/script.js"></script>
+    <!-- انتخاب بازه زمانی script -->
+    <script>
+
+
+        var slider = document.querySelector("#kt_slider_basic");
+
+        noUiSlider.create(slider, {
+            start: [20, 80],
+            connect: true,
+            margin: 1,
+            range: {
+                "min": 1,
+                "max": 45
+            },
+            tooltips: [{ to: function (value) { return `${Math.floor(value)} روز`; } }, { to: function (value) { return `${Math.floor(value)} روز`; } }],
+        });
+
+
+    </script>
+    <!-- End script -->
 </body>
 </html>

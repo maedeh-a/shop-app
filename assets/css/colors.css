@@ -23,6 +23,7 @@
     --bs-info-rgb: 355, 95, 0;
     --bs-indigo:#252AA3;
     --bs-pink:#FF3D5D;
+    --bs-danger-text-emphasis:#FF7F74;
 }
 
 main.dark {
