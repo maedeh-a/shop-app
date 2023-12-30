@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لیست رزوهای من</title>
+    <title>لیست رزرو غذای سازمانی</title>
     <!-- cdn link -->
     <link rel="stylesheet" href="https://mobile.rasmitar.ir/frontend/assets/plugins/global/plugins.bundle.rtl.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -12,15 +11,13 @@
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 </head>
-
 <body>
     <main class="mx-auto h-100 d-flex flex-column pb-2">
-        <!-- My request list -->
         <div class="d-flex flex-column">
             <header class="d-flex align-items-center justify-content-center mx-3 pt-3 flex-column">
                 <div class="position-relative d-flex align-items-center justify-content-center w-100">
                     <span class="text-dark fw-bold">
-                        لیست رزوهای من
+                        غذاهای سازمانی رزرو شده
                     </span>
                     <a href="" class="position-absolute start-0">
                         <img src="../assets/img/arrow-left.svg" alt="">
@@ -32,7 +29,7 @@
             <div class="d-flex align-items-center  mx-3 py-3 justify-content-between">
                 <div class="d-flex align-items-center bg-light flex-grow rounded-3 px-3">
                     <input type="text" class="bg-transparent border-0 text-dark py-2 w-100 fs-6  "
-                        placeholder="جستجو ی درخواست ها..">
+                        placeholder="جستجو براساس کد پیگیری">
                     <button class="border-0 bg-transparent">
                         <img src="../assets/img/search-normal.svg" alt="">
                     </button>
@@ -44,139 +41,124 @@
                     </button>
                 </div>
             </div>
-            <!-- جستجو در لیست رزروها -->
-            <div class="bg-white mx-4">
-                <div class="d-flex align-items-center justify-content-between">
-                    <span class="text-dark text-tiny fw-400">
-                        جست و جو اخیر
-                    </span>
-                    <button class="bg-transparent text-success border-0">
-                        پاک کن
-                    </button>
-                </div>
-                <div class="d-flex flex-wrap align-content-center">
-                    <div
-                        class="border border-1 mx-1 border-secondary-subtle px-2 py-1 d-flex align-items-center rounded-3 my-1">
-                        <button class=" text-tiny-xs text-secondary bg-transparent border-0 d-flex align-items-center">
-                            باشگاه بدنسازی کسرا
-                            <img src="../assets/img/rotate-left-se.svg" class="me-1" alt="">
-                        </button>
-                    </div>
-                    <div
-                        class="border border-1 mx-1 border-secondary-subtle px-1  py-1 rounded-3 d-flex align-items-center my-1">
-                        <button class=" text-tiny-xs text-secondary bg-transparent border-0 d-flex align-items-center">
-                            استخر رکورد
-                            <img src="../assets/img/rotate-left-se.svg" class="me-1" alt="">
-                        </button>
-                    </div>
-                    <div
-                        class="border border-1 mx-1 border-secondary-subtle px-1  py-1 rounded-3 d-flex align-items-center my-1">
-                        <button class=" text-tiny-xs text-secondary bg-transparent border-0 d-flex align-items-center">
-                            استخر کوثر
-                            <img src="../assets/img/rotate-left-se.svg" class="me-1" alt="">
-                        </button>
-                    </div>
-                    <div
-                        class="border border-1 mx-1 border-secondary-subtle px-1  py-1 rounded-3 d-flex align-items-center my-1">
-                        <button class=" text-tiny-xs text-secondary bg-transparent border-0 d-flex align-items-center">
-                            باشگاه
-                            <img src="../assets/img/rotate-left-se.svg" class="me-1" alt="">
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!-- تایید شده -->
-            <div class="bg-white rounded-3 mb-2 mt-3 mx-3 shadow-bottom py-3 px-2">
+            <!-- Active reservation رزرو فعال    -->
+            <div class="bg-white rounded-3 mb-2 mt-3 mx-3 shadow-bottom py-3 px-3">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center ">
-                        <span class="text-dark fs-7 fw-bold me-2">کد پیگیری : </span>
-                        <span class="text-dark fs-7 fw-bold me-1">122354562</span>
+                        <span class="text-dark fs-7  me-2">شماره پیگیری  : </span>
+                        <span class="text-dark fs-7  me-1">122354562</span>
                     </div>
-
+                    <div class="d-flex align-items-center">
+                        
+                        <div class="bg-success-subtle rounded-2 d-flex">
+                            <span class=" text-success text-tiny-xs text-center py-2 px-1 min-w-60"> رزرو فعال</span>
+                        </div>
+                        <div class="">
+                            <button class="bg-transparent border-0">
+                                <img src="../assets/img/more.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    
+            
                 </div>
                 <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
                 <div class="my-3 d-flex flex-column">
-                    <div class="d-flex align-items-center justify-content-start">
+                    <div class="d-flex align-items-center justify-content-start mb-2">
                         <div class="bg-light rounded-3 p-2 ms-1">
-                            <img src="../assets/img/ticket.svg" alt="">
+                            <img src="../assets/img/reserve-food.svg" alt="">
                         </div>
-                        <div class="d-flex align-items-start flex-column">
-                            <div class="d-flex flex-column align-items-center justify-content-between">
-                                <span class="text-dark fs-7 fw-bold  ">باشگاه بدنسازی پارسه</span>
-                                <div class="d-flex align-items-center mt-2">
-                                    <span class=" text-tiny text-light-emphasis">تاریخ رزرو :</span>
-                                    <span class=" text-tiny text-light-emphasis"> 1402/2/13</span>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-stretch justify-content-start mt-2">
-                                <div class="bg-success rounded-2  px-3 mx-1">
-                                    <span class="text-tiny-xs text-white">تایید شده</span>
-                                </div>
-                                <div class="bg-success rounded-2  px-3 ">
-                                    <span class="text-tiny-xs text-white">پرداخت شده</span>
-                                </div>
-                                <div class="bg-danger-subtle rounded-2 me-1">
-                                    <button class="bg-transparent border-0">
-                                        <img src="../assets/img/trash.svg" alt="">
-                                    </button>
-                                </div>
+                        <div class="d-flex flex-column align-items-center justify-content-between">
+                            <span class="text-dark fs-7 fw-bold  "> رزرو غذای سازمانی</span>
+                            <div class="d-flex align-items-center mt-2">
+                                <span class=" text-tiny text-light-emphasis">تاریخ رزرو :</span>
+                                <span class=" text-tiny text-light-emphasis"> 1402/2/13</span>
                             </div>
                         </div>
-
                     </div>
-                    <div class=" d-flex align-items-center justify-content-center mt-3 bg-light py-2 px-3 rounded-3">
-                        <a href="" class="text-decoration-none text-dark fs-7 ">
-                            مشاهده جزئیات رزرو
-
-                        </a>
+                    <div class="d-flex align-items-stretch justify-content-center gap-2">
+                        <div class="flex-grow-1  bg-light py-1 rounded-3 text-center py-2 px-3 ">
+                            <a href="" class="text-decoration-none text-dark fs-7 d-flex align-items-center justify-content-center">
+                               <span class="flex-grow-1 text-center">
+                                مشاهده جزئیات درخواست
+                               </span>
+                                <span class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M15.5799 11.9999C15.5799 13.9799 13.9799 15.5799 11.9999 15.5799C10.0199 15.5799 8.41992 13.9799 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C13.9799 8.41992 15.5799 10.0199 15.5799 11.9999Z"
+                                            stroke="#3F434A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M11.9998 20.27C15.5298 20.27 18.8198 18.19 21.1098 14.59C22.0098 13.18 22.0098 10.81 21.1098 9.39997C18.8198 5.79997 15.5298 3.71997 11.9998 3.71997C8.46984 3.71997 5.17984 5.79997 2.88984 9.39997C1.98984 10.81 1.98984 13.18 2.88984 14.59C5.17984 18.19 8.46984 20.27 11.9998 20.27Z"
+                                            stroke="#3F434A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                
+                          
+                            </a>
+                        </div>
+                        <div class="bg-danger-subtle d-flex align-items-center rounded-3 px-1">
+                            <button class="bg-transparent border-0">
+                                <img src="../assets/img/trash.svg" alt="">
+                            </button>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
-            <!-- کنسل شده  -->
-            <div class="bg-white rounded-3 mb-2 mt-3 mx-3 shadow-bottom py-3 px-2">
+            <!-- used  استفاده شده     -->
+            <div class="bg-white rounded-3 mb-2 mt-3 mx-3 shadow-bottom py-3 px-3">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center ">
-                        <span class="text-dark fs-7 fw-bold me-2">کد پیگیری : </span>
-                        <span class="text-dark fs-7 fw-bold me-1">122354562</span>
+                        <span class="text-dark fs-7  me-2">شماره پیگیری : </span>
+                        <span class="text-dark fs-7  me-1">122354562</span>
                     </div>
-
+                  
+            
+                    <div class="bg-danger-subtle rounded-2 d-flex">
+                        <span class=" text-danger text-tiny-xs text-center py-2 px-1 min-w-60"> استفاده شده </span>
+                    </div>
+                       
+               
+            
+            
                 </div>
                 <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
                 <div class="my-3 d-flex flex-column">
-                    <div class="d-flex align-items-center justify-content-start">
+                    <div class="d-flex align-items-center justify-content-start mb-2">
                         <div class="bg-light rounded-3 p-2 ms-1">
-                            <img src="../assets/img/ticket.svg" alt="">
+                            <img src="../assets/img/reserve-food.svg" alt="">
                         </div>
-                        <div class="d-flex align-items-start flex-column">
-                            <div class="d-flex flex-column align-items-center justify-content-between">
-                                <span class="text-dark fs-7 fw-bold  ">باشگاه بدنسازی پارسه</span>
-                                <div class="d-flex align-items-center mt-2">
-                                    <span class=" text-tiny text-light-emphasis">تاریخ رزرو :</span>
-                                    <span class=" text-tiny text-light-emphasis"> 1402/2/13</span>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-stretch justify-content-start mt-2">
-                                <div class="bg-danger-subtle rounded-2  px-3 mx-1">
-                                    <span class="text-tiny-xs text-danger">کنسل شده</span>
-                                </div>
-                                <div class="bg-success rounded-2  px-3 ">
-                                    <span class="text-tiny-xs text-white">پرداخت شده</span>
-                                </div>
-                                <div class="bg-danger-subtle rounded-2 me-1">
-                                    <button class="bg-transparent border-0">
-                                        <img src="../assets/img/trash.svg" alt="">
-                                    </button>
-                                </div>
+                        <div class="d-flex flex-column align-items-center justify-content-between">
+                            <span class="text-dark fs-7 fw-bold  "> رزرو غذای سازمانی</span>
+                            <div class="d-flex align-items-center mt-2">
+                                <span class=" text-tiny text-light-emphasis">تاریخ رزرو :</span>
+                                <span class=" text-tiny text-light-emphasis"> 1402/2/13</span>
                             </div>
                         </div>
-
                     </div>
-                    <div class=" d-flex align-items-center justify-content-center mt-3 bg-light py-2 px-3 rounded-3">
-                        <a href="" class="text-decoration-none text-dark fs-7 ">
-                            مشاهده جزئیات رزرو
-
+                    <div class="d-flex align-items-center justify-content-center   bg-light py-1 rounded-3 text-center py-2 px-3">
+                        
+                        <a href="" class="text-decoration-none text-dark fs-7 d-flex align-items-center justify-content-center w-100">
+                            <span class="flex-grow-1 text-center">
+                                مشاهده جزئیات درخواست
+                            </span>
+                            <span class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width=" 24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M15.5799 11.9999C15.5799 13.9799 13.9799 15.5799 11.9999 15.5799C10.0199 15.5799 8.41992 13.9799 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C13.9799 8.41992 15.5799 10.0199 15.5799 11.9999Z"
+                                        stroke="#3F434A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M11.9998 20.27C15.5298 20.27 18.8198 18.19 21.1098 14.59C22.0098 13.18 22.0098 10.81 21.1098 9.39997C18.8198 5.79997 15.5298 3.71997 11.9998 3.71997C8.46984 3.71997 5.17984 5.79997 2.88984 9.39997C1.98984 10.81 1.98984 13.18 2.88984 14.59C5.17984 18.19 8.46984 20.27 11.9998 20.27Z"
+                                        stroke="#3F434A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+        
+        
                         </a>
+                   
+                       
                     </div>
+            
                 </div>
             </div>
         </div>
@@ -186,13 +168,13 @@
                 aria-labelledby="offcanvasBottomLabel">
                 <div class="offcanvas-header d-flexa align-items-center pb-2 ">
                 
-                
+                   
                     <header class="d-flex align-items-center justify-content-center   flex-colum w-100">
                         <div class="position-relative d-flex align-items-center justify-content-center w-100">
                             <span class="text-dark fs-6 fw-bold">
                                 جستجوی پیشرفته
                             </span>
-                
+                           
                         </div>
                 
                     </header>
@@ -209,51 +191,46 @@
                                 در حال بررسی
                                 <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
-                            <button toggle-button
-                                class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark ">
+                            <button toggle-button class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark ">
                                 تایید شده
                                 <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
-                            <button toggle-button
-                                class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark">
+                            <button toggle-button class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark">
                                 رد شده
                                 <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
-                            <button toggle-button
-                                class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark">
+                            <button toggle-button class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark">
                                 لغو شده
                                 <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
                         </div>
                         <!-- line -->
                         <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
-
+        
                     </div>
                     <!-- categories -->
                     <div class="d-flex flex-column mt-4 mb-3">
                         <span class="text-dark fw-bold fs-7 text-end">
                             دسته بندی ها
                         </span>
-                        <div class="d-flex align-items-center  justify-content-between mt-2 categories-select gap-2" toggle-button-group>
-                            <button
-                                toggle-button
+                        <div class="d-flex align-items-center  justify-content-between mt-2 categories-select gap-2"
+                            toggle-button-group>
+                            <button toggle-button
                                 class="border-0 bg-light text-tiny py-2 text-nowrap rounded-3 w-100 text-dark">
                                 اداری
                                 <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
-                            <button
-                            toggle-button
+                            <button toggle-button
                                 class="border-0 bg-light text-tiny py-2 text-nowrap rounded-3 w-100 text-dark">کارت
                                 رفاهی
                                 <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
-                            <button
-                            toggle-button
+                            <button toggle-button
                                 class="border-0 active text-dark bg-light  text-tiny me-1 py-2 text-nowrap rounded-3 w-100">کارت
                                 اعتباری
                                 <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
-
+        
                         </div>
                         <!-- line -->
                         <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
@@ -281,33 +258,37 @@
                         </div>
                         <!-- line -->
                         <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
-
-
+        
+        
                     </div>
                     <!-- time -->
                     <div class="d-flex flex-column mt-4">
                         <span class="text-dark fw-bold fs-7 text-end">انتخاب بازه زمانی:</span>
                     </div>
                     <div class=" w-100">
-
-
-
-                    
-                    <div class="mb-5 mt-4 px-3 pb-4">
-                        <div id="kt_slider_basic" class=""></div>
-                    </div>
-
+        
+        
+        
+        
+                        <div class="mb-5 mt-4 px-3 pb-4">
+                            <div id="kt_slider_basic" class=""></div>
+                        </div>
+        
                     </div>
                     <div class="d-flex my-3">
                         <button class="bg-success text-white text-tiny w-100 rounded-3 text-center py-3 border-0">اعمال
                             فیلتر و
                             نمایش</button>
                     </div>
-
+        
                 </div>
             </div>
         </div>
     </main>
+    
+
+
+
 
 
 
@@ -321,28 +302,6 @@
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
         integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
     <script src="https://mobile.rasmitar.ir/frontend/assets/plugins/global/plugins.bundle.js"></script>
-        <script src="assets/js/script.js"></script>
-    <!-- انتخاب بازه زمانی script -->
-    <script>
-      
-
-        var slider = document.querySelector("#kt_slider_basic");
-
-        noUiSlider.create(slider, {
-            start: [20, 80],
-            connect: true,
-            margin: 1,
-            range: {
-                "min": 1,
-                "max": 45
-            },
-                tooltips: [{ to: function (value) { return  `${Math.floor(value)} روز`; }}, { to: function (value) { return `${Math.floor(value)} روز`; } }],
-        });
-
-
-    </script>
-    <!-- End script -->
-
+    <script src="assets/js/script.js"></script>
 </body>
-
 </html>
