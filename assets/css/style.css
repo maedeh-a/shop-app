@@ -351,3 +351,26 @@ div.noUi-horizontal .noUi-tooltip{
     bottom: unset;
     top: 120%;
 }
+.Rectangle-food{
+    top: -150px;
+    left: -8px;
+}
+.food-slider .swiper-button-next::after,
+.food-slider .swiper-button-prev::after {
+    font-family: swiper-icons;
+    font-size: 20px !important;
+    color: white;
+}
+.food-slider .swiper-button-next,
+.food-slider.swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, 35px) ;
+    left: auto;
+}
+.food-slider .swiper-button-prev,
+.food-slider .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 35px);
+    right: auto;
+}
+.min-h-250{
+    min-height: 250px;
+}
