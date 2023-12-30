@@ -12,18 +12,20 @@
 </head>
 <body>
     <main class="mx-auto h-100 d-flex flex-column pb-2">
-        <div class="mx-3">
-            <header class="d-flex align-items-center justify-content-center mx-2 pt-3 flex-column">
-                <div class="position-relative d-flex align-items-center justify-content-center w-100">
-                    <span class="text-dark fw-bold">
-                        انتخاب خدمات
-                    </span>
-                    <a href="" class="position-absolute start-0">
-                        <img src="../assets/img/arrow-left.svg" alt="">
-                    </a>
-                </div>
+        <header
+            class="d-flex z-1000 align-items-center justify-content-center  bg-white position-fixed top-0 left-0 w-100 px-3 pt-3 flex-column">
+            <div class="position-relative d-flex align-items-center justify-content-center w-100">
+                <span class="text-dark fw-bold">
+                    انتخاب خدمات
+                </span>
+                <a href="" class="position-absolute start-0">
+                    <img src="../assets/img/arrow-left.svg" alt="">
+                </a>
+            </div>
+            <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
+        </header>
+        <div class="mx-3 d-flex flex-column">
             
-            </header>
             <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-2 "></div>
             <div class="d-flex align-items-center justify-content-between w-100">
                 <div class="d-flex flex-column my-2">
@@ -335,7 +337,7 @@
                            
                     <div class="d-flex align-items-start justify-content-start mx-3 ">
                         
-                        <label class="container position-relative d-flex text-dark text-tiny text-nowrap me-2 fw-400 ">
+                        <label class="container-radio position-relative d-flex text-dark text-tiny text-nowrap me-2 fw-400 ">
                             <input type="checkbox" class="position-absolute" checked="checked" name="radio">
                             <span class="checkmark"></span>
                         </label>
@@ -544,47 +546,7 @@
 
     <!-- End -->
 
-    <!-- modal  -->
-    <!-- خطای اطلاعات تکراری -->
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        خطای اطلاعات تکراری
-    </button>
     
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                
-                <div class="modal-body">
-                    <div class="d-flex flex-column align-items-center mx-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="../assets/img/programming-arrows.svg" alt="">
-                        </div>
-                        <div class="d-flex flex-column">
-                            <span class="text-dark fw-bold text-tiny">
-                                مشخصات شخص دیگری نمی تواند با عضو اصلی یکسان باشد
-                            </span>
-                            <div class="d-flex align-items-center justify-content-start mt-3">
-                                <div class="ms-2">
-                                    <img src="../assets/img/close-circle-red.svg" alt="">
-                                </div>
-                                <span class="text-secondary text-tiny-xs">
-                                    نام و نام خانوادگی ،شماره موبایل، کد ملی
-                                </span>
-                            </div>
-                           
-                        </div>
-                        <div class="mt-4 w-100">
-                            <button class="bg-danger text-white rounded-3 text-tiny border-0 py-3 px-3 w-100">تایید و ویرایش</button>
-                        </div>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-    </div>
-    <!-- End modal -->
 
 
 

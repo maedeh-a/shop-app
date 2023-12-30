@@ -28,8 +28,8 @@
 }
 
 /* End  My request list */
-/* The container */
-label.container {
+/* The container-radio */
+label.container-radio {
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -37,12 +37,12 @@ label.container {
     user-select: none;
 }
 
-.payment-lines .container {
+.payment-lines .container-radio {
     transform: translateY(-9px);
 }
 
 /* Hide the browser's default radio button */
-label.container input {
+label.container-radio input {
     opacity: 0;
     cursor: pointer;
 }
@@ -61,12 +61,12 @@ label.container input {
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input~.checkmark {
+.container-radio:hover input~.checkmark {
     background-color: var(--bs-light);
 }
 
 /* When the radio button is checked, add a blue background */
-.container input:checked~.checkmark {
+.container-radio input:checked~.checkmark {
     background-color: white;
 }
 
@@ -78,12 +78,12 @@ label.container input {
 }
 
 /* Show the indicator (dot/circle) when checked */
-.container input:checked~.checkmark:after {
+.container-radio input:checked~.checkmark:after {
     display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.container .checkmark::after {
+.container-radio .checkmark::after {
     top: 2px;
     left: 2px;
     width: 14px;
@@ -176,7 +176,7 @@ label.container input {
 
 /* When the checkbox is checked, add a blue background */
 .container-tick input:checked~.checkmark {
-    background-color: var(--bs-success);
+    background-color: white;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -197,7 +197,7 @@ label.container input {
     top: 5px;
     width: 5px;
     height: 10px;
-    border: solid white;
+    border: solid var(--bs-success);
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -250,8 +250,8 @@ label.container input {
 }
 
 .circle-bg-right {
-    height: 50px;
-    width: 50px;
+    height:45px;
+    width:45px;
     bottom: 156px;
     right: -27px;
     border: 1px solid var(--bs-secondary-bg-subtle);
@@ -271,8 +271,8 @@ label.container input {
 }
 
 .circle-bg-left {
-    height: 50px;
-    width: 50px;
+    height:45px;
+    width:45px;
     bottom: 156px;
     left: -27px;
     border: 1px solid var(--bs-secondary-bg-subtle);
@@ -375,11 +375,27 @@ div.noUi-horizontal .noUi-tooltip{
     min-height: 250px;
 }
 .offcanvas-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1040;
-    width: 100vw;
-    height: 100vh;
-    filter: blur(1.5rem);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1040;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+}
+.noUi-target {
+    height: 4px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
+}
+.noUi-target.noUi-horizontal {
+    height: 4px;
+}
+.noUi-target.noUi-horizontal .noUi-handle {
+    width: 24px;
+    height: 24px;
+    top: -12.5px;
+    border-radius: 50%;
+    outline: none;
 }
