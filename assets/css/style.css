@@ -374,3 +374,12 @@ div.noUi-horizontal .noUi-tooltip{
 .min-h-250{
     min-height: 250px;
 }
+.offcanvas-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    filter: blur(1.5rem);
+}
