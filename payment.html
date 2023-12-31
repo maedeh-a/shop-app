@@ -17,7 +17,7 @@
 <body>
     <main class="mx-auto h-100 d-flex flex-column">
         <!-- bill payment -->
-        <div class="d-flex flex-column mx-3">
+        <div class="d-flex flex-column ">
             <header class="d-flex align-items-center justify-content-center mx-3 pt-3 flex-column">
                 <div class="position-relative d-flex align-items-center justify-content-center w-100">
                     <span class="text-dark fw-bold">
@@ -90,7 +90,7 @@
                 <div class="d-flex flex-column align-items-center payment-lines">
                     <div class="bg-white shadow-bottom rounded-3 d-flex mt-3 w-100
                     align-items-center justify-content-between py-3 px-2">
-                        <div class="d-flex align-items-center ">
+                        <div class="d-flex align-items-center flex-grow-1 content">
                             <div class="rounded-3 bg-light p-2">
                                 <img src="/assets/img/money-tick.svg" alt="">
                             </div>
@@ -110,7 +110,7 @@
                     </div>
                     <div class="bg-white shadow-bottom rounded-3 d-flex mt-3 w-100
                                         align-items-center justify-content-between py-3 px-2">
-                        <div class="d-flex align-items-center ">
+                        <div class="d-flex align-items-center flex-grow-1 content">
                             <div class="rounded-3 bg-light p-2">
                                 <img src="/assets/img/money-tick.svg" alt="">
                             </div>
@@ -130,7 +130,7 @@
                     </div>
                     <div class="bg-white shadow-bottom rounded-3 d-flex mt-3 w-100
                                                             align-items-center justify-content-between py-3 px-2">
-                        <div class="d-flex align-items-center ">
+                        <div class="d-flex align-items-center flex-grow-1 content">
                             <div class="rounded-3 bg-light p-2">
                                 <img src="/assets/img/wallet-money.svg" alt="">
                             </div>
@@ -150,7 +150,7 @@
                     </div>
                     <div class="bg-white shadow-bottom rounded-3 d-flex mt-3 w-100
                                                             align-items-center justify-content-between py-3 px-2">
-                        <div class="d-flex align-items-center ">
+                        <div class="d-flex align-items-center flex-grow-1 content">
                             <div class="rounded-3 bg-light p-2">
                                 <img src="/assets/img/wallet-money.svg" alt="">
                             </div>
@@ -243,7 +243,13 @@
     <script src="https://mobile.rasmitar.ir/frontend/assets/plugins/global/plugins.bundle.js"></script>
     <script src="https://mobile.rasmitar.ir/frontend/assets/js/scripts.bundle.js"></script>
     <script src="https://mobile.rasmitar.ir/frontend/assets/js/general.js"></script>
-
+   <script>
+    $(function(){
+        $(".payment-lines .content").on('click', (e) => {
+            $(e.target).parent().find('label').click()
+        })
+    })
+   </script>
     <!-- End script -->
 </body>
 </html>
