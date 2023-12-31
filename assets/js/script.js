@@ -10,7 +10,7 @@ $(function () {
         $current.addClass('active')
     })
     $("#rateYo").length > 0 && $("#rateYo").rateYo({
-        starWidth: "40px",
+        starWidth: "30px",
         rating: 3.6,
         normalFill: "#fff",
         starSvg: `<svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
