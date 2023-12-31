@@ -33,7 +33,7 @@
                     <button type="button" class="border-0 bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close">
                         <img src="../assets/img/close-circle.svg" alt="">
                     </button>
-                    <header class="d-flex align-items-center justify-content-center   flex-colum w-100">
+                    <div class="d-flex align-items-center justify-content-center   flex-colum w-100">
                         <div class="position-relative d-flex align-items-center justify-content-center w-100">
                             <span class="text-dark text-tiny fw-400">
                                 انتخاب تاریخ رزرو
@@ -43,7 +43,7 @@
                             </a>
                         </div>
                 
-                    </header>
+                    </div>
                 
                 </div>
                 <div class="offcanvas-body ">
@@ -98,7 +98,7 @@
                     <button type="button" class="border-0 bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close">
                         <img src="../assets/img/close-circle.svg" alt="">
                     </button>
-                    <header class="d-flex align-items-center justify-content-center   flex-colum w-100">
+                    <div class="d-flex align-items-center justify-content-center   flex-colum w-100">
                         <div class="position-relative d-flex align-items-center justify-content-center w-100">
                             <span class="text-dark text-tiny fw-400">
                                 رزرو غذای سازمانی
@@ -108,7 +108,7 @@
                             </a>
                         </div>
             
-                    </header>
+                    </div>
             
                 </div>
                 <div class="offcanvas-body px-0 py-0 ">
@@ -173,12 +173,12 @@
                     <!-- slider  step1-->
                     <div class="food-slider mb-2">
                         <!-- Slider main container -->
-                        <div class="swiper">
+                        <div class="swiper reserve-food-swiper">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <div class="position-relative bg-success py-3  ">
+                                    <div class="position-relative bg-success py-10  ">
                                         <div class="position-absolute Rectangle-food z-2">
                                             <img src="../assets/img/Rectangle-food.png" alt="">
                                         </div>
@@ -227,7 +227,7 @@
                                 </div>
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <div class="position-relative bg-success py-3  ">
+                                    <div class="position-relative bg-success py-10  ">
                                         <div class="position-absolute Rectangle-food z-2">
                                             <img src="../assets/img/Rectangle-food.png" alt="">
                                         </div>
@@ -547,7 +547,7 @@
                     <button type="button" class="border-0 bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close">
                         <img src="../assets/img/close-circle.svg" alt="">
                     </button>
-                    <header class="d-flex align-items-center justify-content-center   flex-colum w-100 ">
+                    <div class="d-flex align-items-center justify-content-center   flex-colum w-100 ">
                         <div class="position-relative d-flex align-items-center justify-content-center w-100">
                             <span class="text-dark text-tiny fw-400">
                                 فیش نهایی رزرو غذا
@@ -557,7 +557,7 @@
                             </a>
                         </div>
                 
-                    </header>
+                    </div>
                 
                 </div>
                 <div class="offcanvas-body ">
@@ -610,7 +610,7 @@
                                 <div class="d-flex flex-column align-items-start justify-content-start">
                                     <span class="text-success fs-7">تاریخ رزرو:</span>
                                     <div class="d-flex align-items-center">
-                                        <span class=" text-tiny text-light-emphasis">27 آبمانماه 1402</span>
+                                        <span class=" text-tiny text-light-emphasis">27 آبانماه 1402</span>
                             
                                     </div>
                                 </div>
@@ -874,6 +874,16 @@
     <!-- End script -->
     <script>
         const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 16,
+            rtl: true,
+            navigation: {
+                nextEl: '.swiper-button-prev',
+                prevEl: '.swiper-button-next',
+            },
+
+        })
+        const swiper2= new Swiper('.reserve-food-swiper', {
             slidesPerView: 1,
             spaceBetween: 16,
             rtl: true,

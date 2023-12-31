@@ -380,7 +380,8 @@ div.noUi-horizontal .noUi-tooltip {
 
 .Rectangle-food {
     top: -150px;
-    left: -8px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .food-slider .swiper-button-next::after,
@@ -494,5 +495,5 @@ div.footer-menu>div:first-child {
     width: 100px;
 }
 #collapseExample .checkmark{
-    
+
 }
