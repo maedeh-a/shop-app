@@ -109,6 +109,7 @@ main {
 body {
     font-family: IRANSans,IranYekanFarsiNumber !important;
     font-weight: 300;
+    background: white;
 }
 
 .h-60 {
@@ -181,4 +182,21 @@ box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px
 }
 .fill-success{
     fill: var(--bs-success);
+}
+main{
+    width: 100%;
+    padding-top: 30px;
+    background: white;
+}
+
+header{
+    position: sticky;
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+    max-width: 576px;
+    width: calc(100% - 32px);
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10;background: white;
 }
