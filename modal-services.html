@@ -41,7 +41,7 @@
                 <button type="button" class="border-0 bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close">
                     <img src="../assets/img/close-circle.svg" alt="">
                 </button>
-                <header class="d-flex align-items-center justify-content-center   flex-colum w-100">
+                <div class="d-flex align-items-center justify-content-center   flex-colum w-100">
                     <div class="position-relative d-flex align-items-center justify-content-center w-100">
                         <span class="text-dark text-tiny fw-400">
                             انتخاب تاریخ رزرو
@@ -51,7 +51,7 @@
                         </a>
                     </div>
         
-                </header>
+                </div>
         
             </div>
             <!-- Select the reservation date step1-->
@@ -185,7 +185,7 @@
                 <button type="button" class="border-0 bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close">
                     <img src="../assets/img/close-circle.svg" alt="">
                 </button>
-                <header class="d-flex align-items-center justify-content-center   flex-colum w-100">
+                <div class="d-flex align-items-center justify-content-center   flex-colum w-100">
                     <div class="position-relative d-flex align-items-center justify-content-center w-100">
                         <span class="text-dark text-tiny fw-400">
                             انتخاب تاریخ رزرو
@@ -195,7 +195,7 @@
                         </a>
                     </div>
         
-                </header>
+                </div>
         
             </div>
           
@@ -300,9 +300,9 @@
                    
                     <label class="container-radio position-relative d-flex mb-auto ">
                         <input type="checkbox" class="position-absolute" checked="checked" name="radio">
-                        <span class="checkmark"></span>
+                        <span class="checkmark" style="left: -20px; right: unset"></span>
                     </label>
-                    <span class="text-dark fs-7 text-nowrap me-4 pe-1 fw-bold"> قوانین را مطالعه کرده و می پذیرم</span>
+                    <span class="text-dark fs-7 text-nowrap ms-10 pe-1 fw-bold"> قوانین را مطالعه کرده و می پذیرم</span>
                 </div>
         
                 <div class="mt-3 w-100">
@@ -336,7 +336,7 @@
                 <button type="button" class="border-0 bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close">
                     <img src="../assets/img/close-circle.svg" alt="">
                 </button>
-                <header class="d-flex align-items-center justify-content-center   flex-colum w-100">
+                <div class="d-flex align-items-center justify-content-center   flex-colum w-100">
                     <div class="position-relative d-flex align-items-center justify-content-center w-100">
                         <span class="text-dark text-tiny fw-400">
                             انتخاب دریافت کننده خدمات
@@ -346,7 +346,7 @@
                         </a>
                     </div>
         
-                </header>
+                </div>
         
             </div>
         
@@ -434,7 +434,7 @@
                         <span class="bg-light rounded-3 p-2">
                             <img src="../assets/img/user-tag.svg" alt="">
                         </span>
-                        <button class="bg-transparent border-0 d-flex  align-items-start" type="button"
+                        <button class="bg-transparent border-0 d-flex  align-items-center justify-content-between flex-grow-1" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
                             aria-controls="collapseExample">
                             <div class="d-flex flex-column align-items-start">
@@ -462,7 +462,7 @@
                                 <div class="d-flex algin-items-start mb-3">
                                     <label class="container-tick position-relative d-flex">
                                         <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
+                                        <span class="checkmark"  style="left: unset; right: 0"></span>
                                     </label>
                                     <span class="text-dark text-tiny me-2">
                                         رزرو برای خودم
@@ -472,30 +472,30 @@
                                 <div class="d-flex algin-items-start">
                                     <label class="container-tick position-relative d-flex">
                                         <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
+                                        <span class="checkmark" style="left: unset; right: 0"></span>
                                     </label>
                                     <span class="text-dark text-tiny me-2">رزرو برای شخص دیگر</span>
         
                                 </div>
                             </div>
                             <div class="d-flex flex-column align-items-center  ">
-                                <div class="w-100 border-1 border-success position-relative pe-2
+                                <div class="w-100 border-1 border-success position-relative p-2
                                                              rounded-3 border d-flex flex-column mb-3">
-                                    <span class="position-absolute text-danger text-tiny text-input1">(الزامی)</span>
-                                    <label for="" class=" py-2 text-success text-tiny">نام و نام خانوادگی فرد دیگر: </label>
+                                    
+                                    <label for="" class=" py-2 text-success text-tiny">نام و نام خانوادگی فرد دیگر: <span class="fw-light text-danger text-tiny text-input1">(الزامی)</span></label>
                                     <input type="text" class="bg-transparent border-0 text-dark rounded-4 pb-1 text-tiny ">
                                 </div>
-                                <div class="d-flex align-items-center ">
+                                <div class="d-flex align-items-center gap-4 w-100">
                                     <div
-                                        class=" border-1 position-relative pe-2 flex-column d-flex border-success rounded-3 border ms-3">
-                                        <span class="position-absolute text-danger text-tiny text-input2">(الزامی)</span>
-                                        <label for="" class=" py-2 text-success text-tiny">شماره تماس:</label>
+                                        class=" border-1 position-relative p-2 flex-column d-flex border-success rounded-3 border ">
+                                        <label for="" class=" py-2 text-success text-tiny">شماره تماس: <span class="fw-light text-danger text-tiny text-input2">(الزامی)</span>
+</label>
                                         <input type="text" class="bg-transparent border-0 text-dark rounded-4 pb-1 text-tiny ">
                                     </div>
                                     <div
-                                        class=" border-1 position-relative pe-2 flex-column d-flex border-success rounded-3 border">
-                                        <span class="position-absolute text-danger text-tiny text-input3">(الزامی)</span>
-                                        <label for="" class=" py-2 text-success text-tiny">کد ملی:</label>
+                                        class=" border-1 position-relative p-2 flex-column d-flex border-success rounded-3 border">
+                                        <label for="" class=" py-2 text-success text-tiny">کد ملی:<span class="fw-light text-danger text-tiny text-input3">(الزامی)</span>
+</label>
                                         <input type="text" class="bg-transparent border-0 text-dark rounded-4 pb-1 text-tiny ">
                                     </div>
                                 </div>
@@ -537,7 +537,7 @@
                         <button type="button" class="border-0 bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close">
                             <img src="../assets/img/close-circle.svg" alt="">
                         </button>
-                        <header class="d-flex align-items-center justify-content-center   flex-colum w-100">
+                        <div class="d-flex align-items-center justify-content-center   flex-colum w-100">
                             <div class="position-relative d-flex align-items-center justify-content-center w-100">
                                 <span class="text-dark text-tiny fw-400">
                                     روش پرداخت
@@ -547,7 +547,7 @@
                                 </a>
                             </div>
                 
-                        </header>
+                        </div>
                 
                     </div>
                 
@@ -683,9 +683,9 @@
                                     </div>
                                     <div class="collapse" id="collapseExample2">
                                         <div class="d-flex flex-column">
-                                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                            <div class="d-flex align-items-center justify-content-between mb-3 gap-3">
                                                 <div class="d-flex flex-column border border-1 border-success w-100 px-2 rounded-4 py-2 ms-2">
-                                                    <span class="text-end text-success text-tiny">مبلغ خدمات:</span>
+                                                    <span class="text-start text-success text-tiny">مبلغ خدمات:</span>
                                                     <div class="d-flex align-items-center justify-content-end">
                                                         <span class="text-dark text-tiny">300.000.000 </span>
                                                         <span class="text-dark text-tiny">ریال</span>
@@ -694,12 +694,12 @@
                                                 </div>
                                                 <div class="d-flex flex-column border border-1 border-danger w-100 rounded-4 px-2 py-2">
                                                     <span class="text-danger text-tiny ">تخفیف:</span>
-                                                    <span class=" text-dark text-tiny text-start">165.000.000</span>
+                                                    <span class=" text-dark text-tiny text-end d-block">165.000.000</span>
                                                 </div>
                                             </div>
                                             <div class="d-flex flex-column border border-1 border-success w-100 px-2 rounded-4 py-2">
                                                 <div class="">
-                                                    <span class="text-end text-success text-tiny">مبلغ قابل پرداخت:</span>
+                                                    <span class="text-start text-success text-tiny">مبلغ قابل پرداخت:</span>
                                                 </div>
                                                 <div class="d-flex align-items-center justify-content-end">
                                                     <span class="text-dark text-tiny">
@@ -752,7 +752,7 @@
                                 مشخصات شخص دیگری نمی تواند با عضو اصلی یکسان باشد
                             </span>
                             <div class="d-flex align-items-center justify-content-start mt-3">
-                                <div class="ms-2">
+                                <div class="me-2">
                                     <img src="../assets/img/close-circle-red.svg" alt="">
                                 </div>
                                 <span class="text-secondary text-tiny-xs">
@@ -762,7 +762,9 @@
     
                         </div>
                         <div class="mt-4 w-100">
-                            <button class="bg-danger text-white rounded-3 text-tiny border-0 py-3 px-3 w-100">تایید و
+                            <button 
+                            data-bs-dismiss="modal"
+                            class="bg-danger text-white rounded-3 text-tiny border-0 py-3 px-3 w-100">تایید و
                                 ویرایش</button>
                         </div>
                     </div>
