@@ -188,6 +188,12 @@ main{
     padding: 30px 16px 120px;
     background: white;
 }
+main#service-list{
+    background: transparent;
+}
+main#service-list header{
+    background: transparent;
+}
 
 header{
     position: sticky;
@@ -198,5 +204,7 @@ header{
     width: calc(100% - 32px);
     left: 50%;
     transform: translate(-50%, 0);
-    z-index: 10;background: white;
+    z-index: 10;
+
+    background: white;
 }
