@@ -399,3 +399,17 @@ div.noUi-horizontal .noUi-tooltip{
     border-radius: 50%;
     outline: none;
 }
+.chart0089 {
+    left: 80px;
+    top: 15px;
+}
+.bg-opacity-black{
+
+    background: rgba(0, 0, 0, 0.05);
+}
+.slider-food2{
+
+    right: 34px !important;
+    top: 40px;
+
+}
