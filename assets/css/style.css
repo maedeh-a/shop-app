@@ -381,7 +381,11 @@ div.noUi-horizontal .noUi-tooltip{
 	z-index: 1040;
 	width: 100vw;
 	height: 100vh;
-	background-color: #000;
+	background-color: rgba(220, 220, 220, 0.35);
+    backdrop-filter: blur(15px);
+}
+.offcanvas-backdrop.show {
+    opacity: 1;
 }
 .noUi-target {
     height: 4px;
@@ -412,4 +416,8 @@ div.noUi-horizontal .noUi-tooltip{
     right: 34px !important;
     top: 40px;
 
+}
+.tick-step {
+    right: -4px;
+    bottom: -6px;
 }

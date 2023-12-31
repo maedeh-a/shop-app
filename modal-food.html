@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Basic styles of the plugin  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
 </head>
 <body>
     <main class="mx-auto h-100 d-flex flex-column pb-2">
@@ -80,7 +82,7 @@
             </div>
         </div>
         <!-- رزرو غذای سازمانی -->
-        <div class="mb-3">
+        <div class="">
             <button class="bg-success border-0 rounded-3 p-2 " type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasBottomStep4" aria-controls="offcanvasBottomStep4">
                 رزرو غذای سازمانی
@@ -95,7 +97,7 @@
                     <header class="d-flex align-items-center justify-content-center   flex-colum w-100">
                         <div class="position-relative d-flex align-items-center justify-content-center w-100">
                             <span class="text-dark text-tiny fw-400">
-                                انتخاب تاریخ رزرو
+                                رزرو غذای سازمانی
                             </span>
                             <a href="" class="position-absolute start-0">
                                 <img src="../assets/img/arrow-left.svg" alt="">
@@ -105,7 +107,7 @@
                     </header>
             
                 </div>
-                <div class="offcanvas-body px-0 ">
+                <div class="offcanvas-body px-0 py-0 ">
                   
                     <div class="d-flex flex-column mx-3">
             
@@ -119,19 +121,19 @@
                             </div>
                         </div>
                         <!-- steps -->
-                        <div class="d-flex align-items-center justify-content-between pb-2 pt-4">
+                        <div class="d-flex align-items-center justify-content-between pb-2 pt-2 mx-3">
                             <div class="d-flex flex-column align-items-center justify-content-center">
-                                <div class="bg-warning-subtle rounded-3 p-3">
+                                <div class="bg-warning-subtle rounded-3 p-2">
                                     <img src="../assets/img/sun-fog.svg" alt="">
                                 </div>
                         
-                                <span class="fw-400 text-dark text-tiny text-nowrap mt-2">
+                                <span class="fw-400 text-dark text-tiny text-nowrap ">
                                     شام
                                 </span>
                             </div>
                             <div class="line-dashed-success"></div>
                             <div class="d-flex flex-column align-items-center justify-content-center">
-                                <div class="bg-warning-subtle rounded-3 p-3">
+                                <div class="bg-warning-subtle rounded-3 p-2">
                                     <img src="../assets/img/reserve-red.svg" alt="">
                         
                                 </div>
@@ -141,10 +143,10 @@
                             </div>
                             <div class="line-dashed-success"></div>
                             <div class="d-flex flex-column align-items-center justify-content-center">
-                                <div class="bg-warning-subtle position-relative rounded-3 p-3">
+                                <div class="bg-warning-subtle position-relative rounded-3 p-2">
                                     <img src="../assets/img/sun-green.svg" alt="">
-                                    <div class="position-absolute end-0">
-                                        <svg class="fill-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <div class="position-absolute  tick-step">
+                                        <svg class="fill-success" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
                                             <path
                                                 d="M12 22.0002C17.5 22.0002 22 17.5002 22 12.0002C22 6.50024 17.5 2.00024 12 2.00024C6.5 2.00024 2 6.50024 2 12.0002C2 17.5002 6.5 22.0002 12 22.0002Z"
                                                 stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -165,7 +167,7 @@
                     </div>
                     
                     <!-- slider  step1-->
-                    <div class="food-slider mb-3">
+                    <div class="food-slider mb-2">
                         <!-- Slider main container -->
                         <div class="swiper">
                             <!-- Additional required wrapper -->
@@ -195,10 +197,10 @@
                                             </button>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-center z-3 pt-3 min-h-200">
-                                            <img src="../assets/img/MG_3160 1.png" alt="" height="195px">
+                                            <img src="../assets/img/MG_3160 1.png" alt="" height="125px">
                     
                                         </div>
-                                        <div class="d-flex mx-5 align-items-center justify-content-center 
+                                        <div class="d-flex mx-5 align-items-center justify-content-center transform-scale 
                                          border border-1 border-white rounded-3 px-2 py-1">
                                             <div class="flex-grow-1">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -209,7 +211,7 @@
                                                 </svg>
                                             </div>
                                             <div class="d-flex flex-column align-items-center justify-content-center z-3 w-100 text-center">
-                                                <span class="text-white text-center fs-6 "> غذای دوم</span>
+                                                <span class="text-white text-center fs-z "> غذای دوم</span>
                                                 <span class="text-white text-center text-tiny"> تخم مرغ و لوبیا و قارچ</span>
                                             </div>
                                         </div>
@@ -219,6 +221,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Slides -->
                                 <div class="swiper-slide">
                                     <div class="position-relative bg-success py-3  ">
                                         <div class="position-absolute Rectangle-food z-2">
@@ -242,7 +245,7 @@
                                             </button>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-center z-3 pt-3 min-h-200">
-                                            <img src="../assets/img/MG_3160 1.png" alt="" height="195px">
+                                            <img src="../assets/img/MG_3160 1.png" alt="" height="160px">
                                 
                                         </div>
                                         <div class="d-flex mx-5 align-items-center justify-content-center 
@@ -256,7 +259,7 @@
                                                 </svg>
                                             </div>
                                             <div class="d-flex flex-column align-items-center justify-content-center z-3 w-100 text-center">
-                                                <span class="text-white text-center fs-6 "> غذای دوم</span>
+                                                <span class="text-white text-center fs-z "> غذای دوم</span>
                                                 <span class="text-white text-center text-tiny"> تخم مرغ و لوبیا و قارچ</span>
                                             </div>
                                         </div>
@@ -266,53 +269,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="position-relative bg-success py-3  ">
-                                        <div class="position-absolute Rectangle-food z-2">
-                                            <img src="../assets/img/Rectangle-food.png" alt="">
-                                        </div>
-                                        <div class="position-absolute star4512 bg-white rounded-2 d-flex align-items-center px-2 z-3  ">
-                                            <button class="bg-transparent border-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M8.18177 3.42493C8.01227 3.72045 7.82317 4.18723 7.53396 4.90824L7.49563 5.00379C7.34772 5.3726 7.21726 5.69788 7.08051 5.95804C6.93237 6.23988 6.75085 6.49845 6.47361 6.70457C6.19636 6.9107 5.89647 7.01006 5.58391 7.07075C5.29539 7.12677 4.94632 7.15802 4.55055 7.19344L4.36463 7.21009C3.64713 7.27434 3.18927 7.31716 2.88581 7.38877C2.87832 7.39054 2.87109 7.39229 2.86408 7.39402C2.86862 7.39963 2.87333 7.4054 2.87822 7.41133C3.07673 7.65177 3.41566 7.96256 3.94851 8.44734L4.3125 8.77849C4.55596 8.99997 4.77112 9.1957 4.93785 9.37608C5.11806 9.57103 5.2756 9.7828 5.38018 10.0503C5.41418 10.1373 5.44245 10.2265 5.4648 10.3171C5.53354 10.5961 5.52685 10.8599 5.49195 11.1231C5.45966 11.3666 5.39664 11.6506 5.32533 11.9719L5.27189 12.2127C5.12776 12.8624 5.03348 13.2919 4.99924 13.5953C4.99707 13.6145 4.99525 13.6325 4.99373 13.6493C5.00803 13.6404 5.02329 13.6307 5.03953 13.6201C5.2953 13.4534 5.63682 13.1764 6.15266 12.756L6.17674 12.7364C6.4859 12.4845 6.75548 12.2648 6.99594 12.104C7.25321 11.9319 7.52854 11.7908 7.85837 11.7382C8.08174 11.7025 8.30935 11.7025 8.53272 11.7382C8.86256 11.7908 9.13788 11.9319 9.39516 12.104C9.63561 12.2648 9.90519 12.4845 10.2143 12.7364L10.2384 12.756C10.7543 13.1764 11.0958 13.4534 11.3516 13.6201C11.3678 13.6307 11.3831 13.6404 11.3974 13.6493C11.3958 13.6325 11.394 13.6145 11.3919 13.5953C11.3576 13.2919 11.2633 12.8624 11.1192 12.2128L11.0658 11.9719C10.9945 11.6506 10.9314 11.3666 10.8991 11.1231C10.8642 10.8599 10.8576 10.5961 10.9263 10.3171C10.9486 10.2265 10.9769 10.1373 11.0109 10.0503C11.1155 9.7828 11.273 9.57103 11.4532 9.37608C11.62 9.1957 11.8351 8.99997 12.0786 8.7785L12.4426 8.44734C12.9754 7.96256 13.3144 7.65177 13.5129 7.41133C13.5178 7.4054 13.5225 7.39963 13.527 7.39402C13.52 7.39229 13.5128 7.39054 13.5053 7.38877C13.2018 7.31716 12.744 7.27434 12.0265 7.21009L11.8405 7.19344C11.4448 7.15802 11.0957 7.12677 10.8072 7.07075C10.4946 7.01006 10.1947 6.9107 9.91749 6.70457C9.64024 6.49845 9.45872 6.23988 9.31058 5.95804C9.17383 5.69788 9.04338 5.37261 8.89547 5.00382L8.85713 4.90824C8.56792 4.18724 8.37882 3.72045 8.20932 3.42493C8.20461 3.41673 8.20002 3.40884 8.19554 3.40124C8.19107 3.40884 8.18648 3.41673 8.18177 3.42493ZM8.32589 3.2204C8.3259 3.22068 8.32369 3.22282 8.31925 3.22595C8.32367 3.22168 8.32589 3.22012 8.32589 3.2204ZM8.07184 3.22595C8.06741 3.22282 8.0652 3.22068 8.0652 3.2204C8.0652 3.22011 8.06742 3.22168 8.07184 3.22595ZM13.7151 7.4589C13.7148 7.45898 13.7123 7.45761 13.7083 7.45457C13.7133 7.4573 13.7153 7.45883 13.7151 7.4589ZM13.6349 7.23619C13.6362 7.23136 13.6374 7.22877 13.6376 7.22868C13.6379 7.2286 13.6372 7.23102 13.6349 7.23619ZM2.75346 7.22868C2.7537 7.22877 2.75485 7.23136 2.75619 7.23619C2.75389 7.23102 2.75322 7.2286 2.75346 7.22868ZM2.68275 7.45457C2.67875 7.45761 2.67627 7.45898 2.67603 7.4589C2.67579 7.45883 2.67778 7.4573 2.68275 7.45457ZM6.9451 2.71562C7.1601 2.34078 7.53369 1.83325 8.19555 1.83325C8.8574 1.83325 9.231 2.34078 9.44599 2.71562C9.67147 3.10872 9.89699 3.67106 10.1596 4.32584L10.2064 4.44257C10.3702 4.85093 10.4739 5.10717 10.5725 5.29473C10.6635 5.46775 10.7225 5.52661 10.7681 5.56048C10.8137 5.59436 10.8871 5.63398 11.0789 5.67123C11.2869 5.71162 11.5622 5.73715 12.0004 5.77639L12.2085 5.79503C12.855 5.85288 13.4173 5.90319 13.8327 6.00123C14.2404 6.09744 14.7938 6.30336 14.9946 6.90043C15.1954 7.49749 14.8789 7.99599 14.6122 8.319C14.3405 8.64815 13.9229 9.02803 13.4428 9.46477L13.0582 9.81464C12.7885 10.06 12.6199 10.2142 12.5001 10.3438C12.3893 10.4638 12.3557 10.526 12.3387 10.5694C12.3274 10.5984 12.318 10.6281 12.3105 10.6583C12.2994 10.7035 12.2909 10.7737 12.3124 10.9357C12.3356 11.1106 12.3845 11.3338 12.4635 11.6897L12.5202 11.9453C12.6527 12.5424 12.7647 13.0472 12.8085 13.4354C12.8479 13.7844 12.8739 14.3121 12.5214 14.7046C12.3383 14.9085 12.1003 15.0553 11.836 15.1274C11.327 15.2663 10.8671 15.0062 10.5729 14.8144C10.2456 14.601 9.84485 14.2744 9.37072 13.888L9.33786 13.8612C8.99764 13.584 8.78036 13.4079 8.60265 13.289C8.43553 13.1773 8.35669 13.1538 8.30794 13.146C8.23348 13.1341 8.15761 13.1341 8.08315 13.146C8.0344 13.1538 7.95556 13.1773 7.78845 13.289C7.61074 13.4079 7.39345 13.584 7.05323 13.8612L7.02037 13.888C6.54624 14.2744 6.14546 14.601 5.81817 14.8144C5.524 15.0062 5.06408 15.2663 4.55509 15.1274C4.29074 15.0553 4.05279 14.9085 3.8697 14.7046C3.51716 14.3121 3.5432 13.7844 3.58258 13.4354C3.62639 13.0472 3.7384 12.5424 3.8709 11.9453L3.92761 11.6897C4.00658 11.3338 4.05547 11.1106 4.07867 10.9357C4.10015 10.7737 4.0917 10.7035 4.08056 10.6583C4.07311 10.6281 4.06369 10.5984 4.05236 10.5694C4.03542 10.526 4.00183 10.4638 3.89094 10.3438C3.77117 10.2142 3.60257 10.06 3.33289 9.81464L2.98911 9.50187C2.97547 9.48946 2.96188 9.4771 2.94833 9.46478C2.46821 9.02803 2.0506 8.64815 1.77885 8.319C1.51217 7.99599 1.19566 7.49749 1.39647 6.90043C1.59727 6.30336 2.15069 6.09744 2.55836 6.00123C2.97379 5.90319 3.53609 5.85288 4.18255 5.79503C4.20079 5.7934 4.21909 5.79176 4.23746 5.79012L4.39067 5.77639C4.8289 5.73715 5.10416 5.71162 5.31216 5.67123C5.50404 5.63398 5.57743 5.59436 5.62299 5.56048C5.66855 5.52661 5.72762 5.46775 5.81857 5.29473C5.91715 5.10717 6.02088 4.85093 6.18468 4.44257L6.21079 4.37748C6.21772 4.3602 6.22462 4.34299 6.2315 4.32583C6.4941 3.67105 6.71963 3.10872 6.9451 2.71562Z"
-                                                        fill="#29D025" />
-                                                </svg>
-                                            </button>
-                                            <span class="fw-bold text-success text-tiny">
-                                                4.2
-                                            </span>
-                                        </div>
-                                        <div class="position-absolute chart0089">
-                                            <button class="bg-transparent border-0">
-                                                <img src="../assets/img/chart-square-white.svg" alt="">
-                                            </button>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center z-3 pt-3 min-h-200">
-                                            <img src="../assets/img/MG_3160 1.png" alt="" height="195px">
-                                
-                                        </div>
-                                        <div class="d-flex mx-5 align-items-center justify-content-center 
-                                                                         border border-1 border-white rounded-3 px-2 py-1">
-                                            <div class="flex-grow-1">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                    <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-                                                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="white" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                            </div>
-                                            <div class="d-flex flex-column align-items-center justify-content-center z-3 w-100 text-center">
-                                                <span class="text-white text-center fs-6 "> غذای دوم</span>
-                                                <span class="text-white text-center text-tiny"> تخم مرغ و لوبیا و قارچ</span>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="bg-food position-absolute inset-0 z-1">
-                                            <img src="../assets/img/slider-bg-pattern 1.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
+                              
                             </div>
                     
                             <div class="" dir="rtl">
@@ -336,7 +293,7 @@
                                             <!-- Slides -->
                                             <div class="swiper-slide">
                                                 <div class=" bg-light rounded-3 py-2 px-3  ">
-                                                    <div class="d-flex position-relative align-items-center justify-content-center z-3 pt-3 min-h-200">
+                                                    <div class="d-flex position-relative align-items-center justify-content-center z-3 min-h-200">
                                                         <img src="../assets/img/252626 1.png" alt="">
                                                         <div class="position-absolute slider-food2">
                                                             <svg class="fill-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -363,7 +320,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class=" bg-light rounded-3 py-2 px-3  ">
-                                                    <div class="d-flex position-relative align-items-center justify-content-center z-3 pt-3 min-h-200">
+                                                    <div class="d-flex position-relative align-items-center justify-content-center z-3 min-h-200">
                                                         <img src="../assets/img/626226 2.png" alt="">
                                                         <div class="position-absolute slider-food2">
                                                             <svg class="fill-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -391,7 +348,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                             <div class=" bg-light rounded-3 py-2 px-3  ">
-                                                <div class="d-flex position-relative align-items-center justify-content-center z-3 pt-3 min-h-200">
+                                                <div class="d-flex position-relative align-items-center justify-content-center z-3 min-h-200">
                                                     <img src="../assets/img/252626 1.png" alt="">
                                                     <div class="position-absolute slider-food2">
                                                         <svg class="fill-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -560,7 +517,7 @@
                         </div>
                     </div>
             
-                    <div class="mt-3 w-100">
+                    <div class="mt-2 w-100 ">
                         <button class="border-0 text-white bg-success rounded-3 fs-7 w-100 text-center py-3 px-3 " type="button"
                             data-bs-toggle="offcanvas" data-bs-target="#offcanvasStep3" aria-controls="offcanvasBottom">
                             تایید و ادامه
@@ -571,6 +528,196 @@
             
                 </div>
             </div>
+        </div>
+        <!-- فیش نهایی رزرو غذا -->
+        <div class="">
+            <button class="bg-success border-0 rounded-3 p-2 " type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottomStep5" aria-controls="offcanvasBottomStep5">
+                فیش نهایی رزرو غذا
+            </button>
+           
+            <div class="offcanvas offcanvas-bottom h-85 rounded-top-5" tabindex="-1" id="offcanvasBottomStep5"
+                aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header d-flexa align-items-center pb-2 border-bottom border-secondary-subtle px-2 ">
+                
+                    <button type="button" class="border-0 bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <img src="../assets/img/close-circle.svg" alt="">
+                    </button>
+                    <header class="d-flex align-items-center justify-content-center   flex-colum w-100 ">
+                        <div class="position-relative d-flex align-items-center justify-content-center w-100">
+                            <span class="text-dark text-tiny fw-400">
+                                فیش نهایی رزرو غذا
+                            </span>
+                            <a href="" class="position-absolute start-0">
+                                <img src="../assets/img/arrow-left.svg" alt="">
+                            </a>
+                        </div>
+                
+                    </header>
+                
+                </div>
+                <div class="offcanvas-body ">
+                    <!-- Desired service hours -->
+                    <div class="d-flex flex-column mb-3 mx-3">
+                        <div class="d-flex align-items-center justify-content-between py-1
+                                                                             border-bottom border-secondary-subtle w-100 ">
+                            <div class="d-flex align-items-center justify-content-start">
+                                <div class="bg-light rounded-3 p-2 ms-2">
+                                    <img src="../assets/img/location.svg" alt="">
+                                </div>
+                                <div class="d-flex flex-column align-items-start">
+                                    <span class="text-success fs-7"> محل سرو غذای سازمانی:</span>
+                                    <span class=" text-tiny text-light-emphasis">رستوران مرکزی</span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <img src="../assets/img/tick-circle.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between py-1
+                        border-bottom border-secondary-subtle w-100 ">
+                            <div class="d-flex align-items-center justify-content-start mb-2">
+                                <div class="p-2 ms-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                        <path d="M11.333 2.58325V6.45825" stroke="#29D025" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M22.667 2.58325V6.45825" stroke="#29D025" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M4.95801 11.7412H29.0413" stroke="#29D025" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M31.1663 24.5417C31.1663 25.5104 30.8688 26.4275 30.3447 27.2025C29.3672 28.7008 27.568 29.7083 25.4997 29.7083C24.0688 29.7083 22.7655 29.2304 21.7738 28.4167C21.3347 28.0808 20.9522 27.6675 20.6547 27.2025C20.1305 26.4275 19.833 25.5104 19.833 24.5417C19.833 21.6871 22.3688 19.375 25.4997 19.375C27.1997 19.375 28.7155 20.0596 29.7497 21.1316C30.628 22.0487 31.1663 23.2371 31.1663 24.5417Z"
+                                            stroke="#29D025" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M23.29 24.5417L24.6925 25.8205L27.71 23.2759" stroke="#29D025" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M29.75 10.9791V21.1316C28.7158 20.0595 27.2 19.3749 25.5 19.3749C22.3692 19.3749 19.8333 21.687 19.8333 24.5416C19.8333 25.5103 20.1308 26.4274 20.655 27.2024C20.9525 27.6674 21.335 28.0808 21.7742 28.4166H11.3333C6.375 28.4166 4.25 25.8333 4.25 21.9583V10.9791C4.25 7.10409 6.375 4.52075 11.3333 4.52075H22.6667C27.625 4.52075 29.75 7.10409 29.75 10.9791Z"
+                                            stroke="#29D025" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16.9935 17.6959H17.0062" stroke="#29D025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M11.7504 17.6959H11.7631" stroke="#29D025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M11.7504 21.5709H11.7631" stroke="#29D025" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="d-flex flex-column align-items-start justify-content-start">
+                                    <span class="text-success fs-7">تاریخ رزرو:</span>
+                                    <div class="d-flex align-items-center">
+                                        <span class=" text-tiny text-light-emphasis">27 آبمانماه 1402</span>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <img src="../assets/img/tick-circle.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between py-1
+                        border-bottom border-secondary-subtle w-100 ">
+                            <div class="d-flex align-items-center justify-content-start mb-2">
+                                <div class="p-2 ms-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="33" viewBox="0 0 34 33" fill="none">
+                                        <path
+                                            d="M29.3962 18.2188C29.3962 24.86 23.8428 30.25 17.0003 30.25C10.1578 30.25 4.60449 24.86 4.60449 18.2188C4.60449 11.5775 10.1578 6.1875 17.0003 6.1875C23.8428 6.1875 29.3962 11.5775 29.3962 18.2188Z"
+                                            stroke="#29D025" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M17 11V17.875" stroke="#29D025" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M12.75 2.75H21.25" stroke="#29D025" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="d-flex flex-column align-items-start justify-content-start">
+                                    <span class="text-success fs-7">سانس رزرو:</span>
+                                    <div class="d-flex align-items-center">
+                                        <span class=" text-tiny text-light-emphasis"> شیفت صبح</span>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <img src="../assets/img/tick-circle.svg" alt="">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+
+                    <!-- rules -->
+                    <div class="d-flex align-items-center justify-content-center gap-2">
+                        <span class="bg-danger-subtle rounded-2 text-danger-emphasis text-tiny text-center py-1 px-2">
+                            قوانین:
+                        </span>
+                        <span class="text-danger-emphasis text-tiny text-center">
+                            تا 12 ساعت قبل قابل تغییر می باشد
+                        </span>
+            
+                    </div>
+            
+                    <!-- Recipient service: -->
+                    <div class="d-flex flex-column mt-4 mb-3  gap-2 px-3 rounded-bottom-3 bg-white shadow-bottom pb-3">
+            
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center ">
+                                <span class="text-nowrap text-tiny text-success mx-1">پنیر </span>
+                                -
+                                <span class="text-nowrap text-tiny text-success mx-1">کره عسل</span>
+                                -
+                                <span class="text-nowrap text-tiny text-success mx-1">آبمیوه</span>
+                            </div>
+                            <div class="line-dashed-secondary py-auto mx-2"></div>
+                            <div class="border border-1 border-success me-2 rounded-2 d-flex">
+                                <span class="text-success px-2 py-1  text-center text-tiny min-w-60">صبحانه</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center ">
+                                <span class="text-nowrap text-tiny text-success mx-1"> زرشک پلو با مرغ</span>
+                                -
+                                <span class="text-nowrap text-tiny text-success mx-1">نوشابه</span>
+                                -
+                                <span class="text-nowrap text-tiny text-success mx-1">سالاد</span>
+                            </div>
+                            <div class="line-dashed-secondary py-auto mx-2"></div>
+                            <div class="border border-1 border-success me-2 rounded-2 d-flex">
+                                <span class="text-success px-2 py-1  text-center text-tiny min-w-60">ناهار</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center ">
+                                <span class="text-nowrap text-tiny text-success mx-1">کتلت </span>
+                                -
+                                <span class="text-nowrap text-tiny text-success mx-1"> دوغ</span>
+                                -
+                                <span class="text-nowrap text-tiny text-success mx-1"></span>
+                            </div>
+                            <div class="line-dashed-secondary py-auto mx-2"></div>
+                            <div class="border border-1 border-success me-2 rounded-2 d-flex">
+                                <span class="text-success px-2 py-1  text-center text-tiny min-w-60">شام</span>
+                            </div>
+                        </div>
+            
+                        <div class="mt-3 w-100">
+                            <button class="border-0 text-white bg-success rounded-3 fs-7 w-100 text-center py-3 px-3 " type="button"
+                               >
+                                ثبت نهایی رزرو غذای سازمانی          
+                        
+                            </button>
+                        </div>
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+        </div>
+        <!-- کال بک موفق -->
+        <div class="">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                کال بک موفق
+            </button>
         </div>
     </main>
     
@@ -590,7 +737,63 @@
 
 
 
-
+        <!-- Modal -->
+        <div class="modal fade" data-bs-backdrop="static" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                    <div class="modal-body">
+                        <div class="d-flex flex-column align-items-center mx-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="95" height="94" viewBox="0 0 95 94" fill="none">
+                                    <path
+                                        d="M75.0895 86.1666H19.6729C7.79785 86.1666 7.79785 80.8791 7.79785 74.4166V70.4999C7.79785 68.3458 9.5791 66.5833 11.7562 66.5833H83.0062C85.1833 66.5833 86.9645 68.3458 86.9645 70.4999V74.4166C86.9645 80.8791 86.9645 86.1666 75.0895 86.1666Z"
+                                        stroke="#29D025" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M82.0168 50.9166V66.5833H12.9438V50.9166C12.9438 35.8766 23.6709 23.3041 37.9605 20.2883C40.098 19.8183 42.3147 19.5833 44.6105 19.5833H50.3501C52.6459 19.5833 54.9022 19.8183 57.0397 20.2883C71.3293 23.3433 82.0168 35.8766 82.0168 50.9166Z"
+                                        stroke="#29D025" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M57.3957 17.6249C57.3957 18.5649 57.2769 19.4266 57.0394 20.2883C54.9019 19.8183 52.6457 19.5833 50.3498 19.5833H44.6103C42.3144 19.5833 40.0978 19.8183 37.9603 20.2883C37.7228 19.4266 37.604 18.5649 37.604 17.6249C37.604 12.2199 42.0373 7.83325 47.4998 7.83325C52.9623 7.83325 57.3957 12.2199 57.3957 17.6249Z"
+                                        stroke="#29D025" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M59.375 43.0833H35.625" stroke="#29D025" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <span class="text-success mb-1 fw-bold text-tiny">
+                                    رزرو موفق
+                                </span>
+                                <span class="fw-bold text-secondary text-tiny">
+                                    غذای سازمانی شما با موفقیت رزرو گردید
+                                </span>
+                               
+        
+                            </div>
+                            <div class="">
+                                <div class="d-flex align-items-center">
+                                    <span class="text-secondary text-tiny ms-1">
+                                        میزان رضایت شما از غذاهای رستوان 
+                                    </span>
+                                    <span class="text-info text-tiny">(الزامی)</span>
+                                </div>
+                            
+                            
+                            
+                            </div>
+                            <div id="rateYo" class=""></div>
+                            <div class="mt-4 w-100">
+                                <button class="bg-success text-white rounded-3 text-tiny border-0
+                                 py-3 px-3 w-100" data-bs-dismiss="modal"> 
+                                ثبت امتیاز و مشاهده رسید
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        <!-- End modal -->
 
 
 
@@ -600,10 +803,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <!-- End script -->
     <script>
         const swiper = new Swiper('.swiper', {
             slidesPerView: 1,
