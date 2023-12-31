@@ -188,10 +188,10 @@ main{
     padding: 30px 16px 120px;
     background: white;
 }
-main#service-list{
+main#main-panel, main#service-list{
     background: transparent;
 }
-main#service-list header{
+main#main-panel header, main#service-list header{
     background: transparent;
 }
 
@@ -207,4 +207,7 @@ header{
     z-index: 10;
 
     background: white;
+}
+.z-3{
+    z-index: 3;
 }
