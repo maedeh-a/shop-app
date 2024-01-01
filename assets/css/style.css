@@ -452,6 +452,10 @@ div.noUi-horizontal .noUi-tooltip {
     right: -4px;
     bottom: -6px;
 }
+.tick-step-2 {
+    right: -2px;
+    bottom: 17px;
+}
 
 .footer-menu li {
     display: flex;
@@ -461,6 +465,9 @@ div.noUi-horizontal .noUi-tooltip {
 .footer-menu li svg {
     margin-inline: unset;
     ;
+}
+.tag-panel{
+    bottom: -61px;
 }
 
 ul.tabbar {
