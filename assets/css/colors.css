@@ -2,6 +2,7 @@
 /* light mood colors */
 :root {
     --bs-success: #29D025;
+    --bs-text-success:#29D025;
     --bs-success-bg-subtle:#29D0251F;
     --bs-success-rgb: 41, 208,37;
     --bs-secondary: #9F9E9A;
