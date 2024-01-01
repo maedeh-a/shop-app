@@ -63,12 +63,19 @@
             <!-- slider -->
             <div class="food-slider">
                 <!-- Slider main container -->
-                <div class="swiper">
+                <div class="swiper reserve-food-swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
                             <div class="position-relative bg-danger py-3  ">
+                                <button class="position-absolute top-0 start-50 translate-middle-x z-3 bg-transparent border-0 shadow-none pt-">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </button>
                                 <div class="position-absolute Rectangle-food z-2">
                                     <img src="../assets/img/Rectangle-food.png" alt="">
                                 </div>
@@ -99,6 +106,13 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="position-relative bg-danger py-3  ">
+                                <button class="position-absolute top-0 start-50 translate-middle-x z-3 bg-transparent border-0 shadow-none pt-">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </button>
                                 <div class="position-absolute Rectangle-food z-2">
                                     <img src="../assets/img/Rectangle-food.png" alt="">
                                 </div>
@@ -129,6 +143,13 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="position-relative bg-danger py-3  ">
+                                <button class="position-absolute top-0 start-50 translate-middle-x z-3 bg-transparent border-0 shadow-none pt-">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </button>
                                 <div class="position-absolute Rectangle-food z-2">
                                     <img src="../assets/img/Rectangle-food.png" alt="">
                                 </div>
@@ -179,7 +200,7 @@
                     </div>
                     <div class="">
                         <!-- Slider main container -->
-                        <div class="swiper">
+                        <div class="swiper small-slider">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
@@ -210,13 +231,29 @@
                                 </div>
                                 <div class="swiper-slide">Slide 2</div>
                                 <div class="swiper-slide">Slide 3</div>
+                                <div class="swiper-slide">Slide 3</div>
                                 ...
                             </div>
 
                         
-                            <!-- If we need navigation buttons -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                            <div class="" dir="rtl">
+                                <div class="swiper-button-prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M17.9998 12.0001V14.6701C17.9998 17.9801 15.6498 19.3401 12.7798 17.6801L10.4698 16.3401L8.15982 15.0001C5.28982 13.3401 5.28982 10.6301 8.15982 8.97005L10.4698 7.63005L12.7798 6.29005C15.6498 4.66005 17.9998 6.01005 17.9998 9.33005V12.0001Z"
+                                            stroke="#29D025" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M6 11.9999V9.32992C6 6.01992 8.35 4.65992 11.22 6.31992L13.53 7.65992L15.84 8.99992C18.71 10.6599 18.71 13.3699 15.84 15.0299L13.53 16.3699L11.22 17.7099C8.35 19.3399 6 17.9899 6 14.6699V11.9999Z"
+                                            stroke="#29D025" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
                         
                             
                         </div>
@@ -296,25 +333,25 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
+        const swiper = new Swiper('.reserve-food-swiper', {
             slidesPerView: 1,
             spaceBetween: 16,
             rtl: true,
             navigation: {
-                nextEl: '.swiper-button-prev',
-                prevEl: '.swiper-button-next',
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
 
         })
     </script>
     <script>
-        const swiper2 = new Swiper('.swiper-slide', {
+        const swiper2 = new Swiper('.small-slider', {
             slidesPerView: 3,
             spaceBetween: 16,
             rtl: true,
             navigation: {
-                nextEl: '.swiper-button-prev',
-                prevEl: '.swiper-button-next',
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
 
         })
