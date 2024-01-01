@@ -16,29 +16,30 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 </head>
 <body>
-    <main class="mx-auto h-100 d-flex flex-column">
-        <div class="d-flex flex-column">
-            <header class="d-flex align-items-center justify-content-center mx-3 pt-3 flex-column">
-                <div class="position-relative d-flex align-items-center justify-content-center w-100">
-                    <span class="text-dark fw-bold">
-                        غذاهای سازمانی رزرو شده
-                    </span>
-                    <a href="" class="position-absolute end-0">
-                        <img src="../assets/img/arrow-left.svg" alt="">
-                    </a>
-                </div>
-                <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
-            </header>
+    <main class="mx-auto  d-flex flex-column">
+        <header class="d-flex align-items-center justify-content-center mx-3 pt-3 flex-column">
+            <div class="position-relative d-flex align-items-center justify-content-center w-100">
+                <span class="text-dark fw-bold">
+                    غذاهای سازمانی رزرو شده
+                </span>
+                <a href="" class="position-absolute end-0">
+                    <img src="../assets/img/arrow-left.svg" alt="">
+                </a>
+            </div>
+            <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
+        </header>
+        <div class="d-flex flex-column min-vh-100">
+           
             <!-- search request -->
-            <div class="d-flex align-items-center  mx-3 py-3 justify-content-between">
-                <div class="d-flex align-items-center bg-light flex-grow rounded-3 px-3">
+            <div class="d-flex align-items-center  mx-3 py-3 justify-content-between mt-2 ">
+                <div class="d-flex align-items-center bg-light flex-grow-1 py-2 me-2 rounded-3 px-3">
                     <input type="text" class="bg-transparent border-0 text-dark py-2 w-100 fs-6  "
                         placeholder="جستجو براساس کد پیگیری">
                     <button class="border-0 bg-transparent">
                         <img src="../assets/img/search-normal.svg" alt="">
                     </button>
                 </div>
-                <div class="me-2">
+                <div class="">
                     <button class="bg-success border-0 rounded-3 p-2 " type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasBottomStep1" aria-controls="offcanvasBottomStep1">
                         <img src="../assets/img/setting-4.svg" alt="">
@@ -69,7 +70,7 @@
                 <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
                 <div class="my-3 d-flex flex-column">
                     <div class="d-flex align-items-center justify-content-start mb-2">
-                        <div class="bg-light rounded-3 p-2 ms-1">
+                        <div class="bg-light rounded-3 p-2 me-2">
                             <img src="../assets/img/reserve-food.svg" alt="">
                         </div>
                         <div class="d-flex flex-column align-items-center justify-content-between">
@@ -129,7 +130,7 @@
                 <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
                 <div class="my-3 d-flex flex-column">
                     <div class="d-flex align-items-center justify-content-start mb-2">
-                        <div class="bg-light rounded-3 p-2 ms-1">
+                        <div class="bg-light rounded-3 p-2 me-2">
                             <img src="../assets/img/reserve-food.svg" alt="">
                         </div>
                         <div class="d-flex flex-column align-items-center justify-content-between">
@@ -173,7 +174,7 @@
                 <div class="offcanvas-header d-flexa align-items-center pb-2 ">
                 
                    
-                    <header class="d-flex align-items-center justify-content-center   flex-colum w-100">
+                    <div class="d-flex align-items-center justify-content-center   flex-colum w-100">
                         <div class="position-relative d-flex align-items-center justify-content-center w-100">
                             <span class="text-dark fs-6 fw-bold">
                                 جستجوی پیشرفته
@@ -181,7 +182,7 @@
                            
                         </div>
                 
-                    </header>
+                    </div>
                 
                 </div>
                 <div class="offcanvas-body ">
@@ -207,7 +208,7 @@
                     </div>
                     <!-- categories -->
                     <div class="d-flex flex-column mt-4 mb-3">
-                        <span class="text-dark fw-bold fs-7 text-end">
+                        <span class="text-dark fw-bold fs-7 text-start">
                             دسته بندی ها
                         </span>
                         <div class="d-flex align-items-center  justify-content-between mt-2 categories-select gap-2"
@@ -238,7 +239,7 @@
                     </div>
                     <!-- Recipient service: -->
                     <div class="d-flex flex-column mt-4 mb-3">
-                        <span class="text-dark  fs-7 text-end fw-400">
+                        <span class="text-dark  fs-7 text-start fw-400 mb-3">
                             محل دریافت غذا:
                         </span>
                         <div class="d-flex align-items-center justify-content-start mt-3">
@@ -248,7 +249,7 @@
                                     <input type="radio" class="position-absolute" checked="checked" name="radio">
                                     <span class="checkmark"></span>
                                 </label>
-                                <span class="text-dark fs-7 text-nowrap ms-2 fw-400"> بیرون بر</span>
+                                <span class="text-dark fs-7 text-nowrap ps-5 ms-3 fw-400"> بیرون بر</span>
                             </div>
                             <div class="d-flex align-items-center mx-3">
                                 
@@ -256,7 +257,7 @@
                                     <input type="radio" class="position-absolute" checked="checked" name="radio">
                                     <span class="checkmark"></span>
                                 </label>
-                                <span class="text-dark fs-7 text-nowrap ms-2 fw-400"> رستوران</span>
+                                <span class="text-dark fs-7 text-nowrap ps-5 ms-3 fw-400"> رستوران</span>
                             </div>
                         </div>
                         <!-- line -->
@@ -265,23 +266,21 @@
         
                     </div>
                     <!-- time -->
-                    <div class="d-flex flex-column mt-4">
-                        <span class="text-dark fw-bold fs-7 text-end">انتخاب بازه زمانی:</span>
+                    <div class="d-flex flex-column mt-4 mb-3">
+                        <span class="text-dark fw-bold fs-7 text-start">انتخاب بازه زمانی:</span>
                     </div>
                     <div class=" w-100">
-        
-        
-        
-        
-                        <div class="mb-5 mt-4 px-3 pb-4">
+                    
+                    
+                    
+                    
+                        <div class=" mt-4 px-3 pb-4">
                             <div id="kt_slider_basic" class=""></div>
                         </div>
-        
+                    
                     </div>
-                    <div class="d-flex my-3">
-                        <button class="bg-success text-white text-tiny w-100 rounded-3 text-center py-3 border-0"
-                        type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasBottomStep2" aria-controls="offcanvasBottomStep#offcanvasBottomStep2">اعمال
+                    <div class="d-flex my-10 pt-10">
+                        <button class="bg-success text-white text-tiny w-100 rounded-3 text-center py-3 border-0">اعمال
                             فیلتر و
                             نمایش</button>
                     </div>
