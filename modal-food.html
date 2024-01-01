@@ -179,6 +179,13 @@
                                 <!-- Slides -->
                                 <div class="swiper-slide">
                                     <div class="position-relative bg-success py-10  ">
+                                        <button class="position-absolute top-0 start-50 translate-middle-x z-3 bg-transparent border-0 shadow-none pt-">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </button>
                                         <div class="position-absolute Rectangle-food z-2">
                                             <img src="../assets/img/Rectangle-food.png" alt="">
                                         </div>
@@ -201,7 +208,7 @@
                                             </button>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-center z-3 pt-3 min-h-200">
-                                            <img src="../assets/img/MG_3160 1.png" alt="" height="125px">
+                                            <img src="../assets/img/MG_3160 1.png" alt="" height="160px">
                     
                                         </div>
                                         <div class="d-flex mx-5 align-items-center justify-content-center transform-scale 
@@ -220,14 +227,21 @@
                                             </div>
                                         </div>
                                       
-                                        <div class="bg-food position-absolute inset-0 z-1">
-                                            <img src="../assets/img/slider-bg-pattern 1.png" alt="">
+                                        <div class="bg-food position-absolute inset-0 z-1 ">
+                                            <img src="../assets/img/slider-bg-pattern 1.png" alt="" class="w-100">
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <div class="position-relative bg-success py-10  ">
+                                    <div class="position-relative bg-success py-10 ">
+                                        <button class="position-absolute top-0 start-50 translate-middle-x z-3 bg-transparent border-0 shadow-none pt-">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </button>
                                         <div class="position-absolute Rectangle-food z-2">
                                             <img src="../assets/img/Rectangle-food.png" alt="">
                                         </div>
@@ -269,7 +283,7 @@
                                         </div>
                                 
                                         <div class="bg-food position-absolute inset-0 z-1">
-                                            <img src="../assets/img/slider-bg-pattern 1.png" alt="">
+                                            <img src="../assets/img/slider-bg-pattern 1.png" alt="" class="w-100">
                                         </div>
                                     </div>
                                 </div>
@@ -868,6 +882,8 @@
     <script src="https://mobile.rasmitar.ir/frontend/assets/js/general.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="../assets/js/script.js"></script>
     <!-- End script -->
     <script>
@@ -876,8 +892,8 @@
             spaceBetween: 16,
             rtl: true,
             navigation: {
-                nextEl: '.swiper-button-prev',
-                prevEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next',
             },
 
         })
@@ -886,8 +902,8 @@
             spaceBetween: 16,
             rtl: true,
             navigation: {
-                nextEl: '.swiper-button-prev',
-                prevEl: '.swiper-button-next',
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
 
         })
