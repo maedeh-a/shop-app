@@ -442,7 +442,7 @@ div.noUi-horizontal .noUi-tooltip {
 }
 
 .slider-food2 {
-    right: 34px !important;
+    right: 36% !important;
     top: 40px;
 }
 
@@ -509,4 +509,13 @@ div.footer-menu>div:first-child {
 .food-slider .swiper-rtl .swiper-button-next {
     left: var(--swiper-navigation-sides-offset, 35px);
     right: auto;
+}
+.small-slider{
+    --swiper-navigation-sides-offset: 16px;
+}
+.small-slider .swiper{
+    height: 120px;
+}
+.small-slider [class^=swiper-button-]::after{
+    display: none;
 }
