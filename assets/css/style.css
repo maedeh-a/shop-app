@@ -501,6 +501,7 @@ div.footer-menu>div:first-child {
     border-radius: 50%;
     transform: scale(0.8);
 }
+
 .food-slider .swiper-button-next,
 .food-slider.swiper-rtl .swiper-button-prev {
     right: var(--swiper-navigation-sides-offset, 35px);
@@ -520,4 +521,11 @@ div.footer-menu>div:first-child {
 }
 .small-slider [class^=swiper-button-]::after{
     display: none;
+}
+.star-3slider{
+    left: 0;
+    top: 0;
+}
+.height-70{
+    height: 70px;
 }
