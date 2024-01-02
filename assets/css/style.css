@@ -554,3 +554,6 @@ div.footer-menu>div:first-child {
 #service-list-select .overlay+div {
     position: relative;
 }
+.payment-lines .content *{
+    pointer-events: none;
+}
