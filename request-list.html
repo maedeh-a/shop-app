@@ -11,6 +11,8 @@
             type="text/css" />
         <link rel="stylesheet" type="text/css" href="https://mobile.rasmitar.ir/frontend/assets/styles/style.css?v=2.4">
         <link rel="stylesheet" href="https://mobile.rasmitar.ir/frontend/assets/css/fontawesome.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
         <link rel="stylesheet" href="../assets/css/global.css">
 
 </head>
@@ -179,92 +181,146 @@
             </div>
          
         </div>
-        <!-- advanced search -->
-        <div class=""> 
-            <div class="offcanvas offcanvas-bottom h-75" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">جستجوی پیشرفته</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <!-- advanced search -->
+    <div class="">
+        <div class="offcanvas offcanvas-bottom h-auto" tabindex="-1" id="offcanvasBottom"
+            aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header d-flexa align-items-center pb-2 ">
+    
+    
+                <div class="d-flex align-items-center justify-content-center   flex-colum w-100">
+                    <div class="position-relative d-flex align-items-center justify-content-center w-100">
+                        <span class="text-dark fs-6 fw-bold">
+                            جستجوی پیشرفته
+                        </span>
+    
+                    </div>
+    
                 </div>
-                <div class="offcanvas-body ">
-                    <!-- filter -->
-                    <div class="d-flex flex-column mb-3">
-                        <span class="text-dark fw-bold fs-7">فیلتر براساس وضعیت:</span>
-                        <div class="d-flex align-items-center  justify-content-between mt-2 filter-select">
-                            <button class="bg-light border-0 text-tiny min-w-85 ms-1 px-2 py-2 text-nowrap rounded-3 text-dark ">
-                                در حال بررسی
-                            </button>
-                            <button class="bg-light active border-0 text-tiny min-w-85 me-1 px-2 py-2 text-nowrap rounded-3 text-dark ">
-                                تایید شده
+    
+            </div>
+            <div class="offcanvas-body ">
+                <!-- filter -->
+                <div class="d-flex flex-column mb-3">
+                    <span class="text-dark fw-bold fs-7">فیلتر براساس وضعیت:</span>
+                    <div class="d-flex align-items-center  justify-content-between mt-2 filter-select active gap-2"
+                        toggle-button-group>
+                        <button toggle-button
+                            class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark active">
+                            در حال بررسی
+                            <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
+                        </button>
+                        <button toggle-button class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark ">
+                            تایید شده
+                            <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
+                        </button>
+                        <button toggle-button class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark">
+                            رد شده
+                            <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
+                        </button>
+                        <button toggle-button class="bg-light border-0 text-tiny  py-2 text-nowrap rounded-3 text-dark">
+                            لغو شده
+                            <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
+                        </button>
+                    </div>
+                    <!-- line -->
+                    <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
+    
+                </div>
+                <!-- categories -->
+                <div>
+                <span class="text-dark fw-bold fs-7 text-start">
+                    دسته بندی ها
+                </span>
+                <div class="swiper" toggle-button-group>
+                    <div class="swiper-wrapper" >
+                        <div class="swiper-slide">
+                            <button toggle-button class="border-0 ext-tiny py-2 text-nowrap rounded-3 w-100  text-dark">
+                                اداری
                                 <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
                             </button>
-                            <button class="bg-light border-0 text-tiny min-w-85 me-1 px-2 py-2 text-nowrap rounded-3 text-dark">
-                                رد شده
-                            </button>
-                            <button class="bg-light border-0 text-tiny min-w-85 ms-1 px-2 py-2 text-nowrap rounded-3 text-dark">
-                                لغو شده
-                            </button>
                         </div>
-                        <!-- line -->
-                        <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
-                        
-                    </div>
-                    <!-- categories -->
-                    <div class="d-flex flex-column mt-4 mb-3">
-                        <span class="text-dark fw-bold fs-7 text-end">
-                            دسته بندی ها
-                        </span>
-                        <div class="d-flex align-items-center  justify-content-between mt-2 categories-select">
-                            <button class="border-0 bg-light text-tiny ms-1 px-2 py-2 text-nowrap rounded-3 w-100 text-dark">اداری</button>
-                            <button class="border-0 bg-light text-tiny ms-1 px-2 py-2 text-nowrap rounded-3 w-100 text-dark">کارت
-                                رفاهی</button>
-                            <button class="border-0 active text-dark bg-light  text-tiny me-1 px-2 py-2 text-nowrap rounded-3 w-100">کارت
-                                اعتباری
-                                <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
-                            </button>
-                        
+                        <div class="swiper-slide">
+                        <button toggle-button class="border-0 ext-tiny py-2 text-nowrap rounded-3 w-100  text-dark">کارت
+                            رفاهی
+                            <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
+                        </button>
                         </div>
-                        <!-- line -->
-                        <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
-                    </div>
-                    <!-- Recipient service: -->
-                    <div class="d-flex flex-column mt-4 mb-3">
-                        <span class="text-dark  fs-7 text-end fw-400">
-                            خدمات گیرنده:
-                        </span>
-                        <div class="d-flex align-items-center justify-content-start mt-3">
-                            <div class="d-flex align-items-center mx-3 ">
-                                <span class="text-dark fs-7 text-nowrap ms-2 fw-400">برای خودم</span>
-                                <label class="container-radio position-relative d-flex mb-auto ">
-                                    <input type="radio" class="position-absolute" checked="checked" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="d-flex align-items-center mx-3">
-                                <span class="text-dark fs-7 text-nowrap ms-2 fw-400">برای شخص دیگری</span>
-                                <label class="container-radio position-relative d-flex mb-auto ">
-                                    <input type="radio" class="position-absolute" checked="checked" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
+                        <div class="swiper-slide">
+                        <button toggle-button class="border-0 active text-dark text-tiny me-1 py-2 text-nowrap rounded-3 w-100 ">کارت
+                            اعتباری
+                            <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
+                        </button>
                         </div>
-                        <!-- line -->
-                        <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
-                        
-
+                        <div class="swiper-slide">
+                        <button toggle-button class="border-0 active text-dark text-tiny me-1 py-2 text-nowrap rounded-3 w-100 ">کارت
+                            اعتباری
+                            <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
+                        </button>
+                        </div>
+                        <div class="swiper-slide">
+                        <button toggle-button class="border-0 active text-dark text-tiny me-1 py-2 text-nowrap rounded-3 w-100 ">کارت
+                            اعتباری
+                            <img src="../assets/img/tick-circle.svg" class="" width="15" alt="">
+                        </button>
+                        </div>
+                    
                     </div>
-                    <!-- time -->
-                    <div class="d-flex flex-column mt-4">
-                        <span class="text-dark fw-bold fs-7 text-end">انتخاب بازه زمانی:</span>
-                    </div>
-                    <div class="d-flex my-3">
-                        <button class="bg-success text-white text-tiny w-100 rounded-3 text-center py-3 border-0">اعمال فیلتر و نمایش</button>
-                    </div>
-                   
                 </div>
+                    <!-- line -->
+                <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
+                </div>
+                <!-- Recipient service: -->
+                <div class="d-flex flex-column mt-4 mb-3">
+                    <span class="text-dark  fs-7 text-start fw-400">
+                        خدمات گیرنده:
+                    </span>
+                    <div class="d-flex align-items-center justify-content-start mt-3">
+                        <div class="d-flex align-items-center mx-3 ">
+    
+                            <label class="container-radio position-relative d-flex mb-auto ">
+                                <input type="radio" class="position-absolute" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <span class="text-dark fs-7 text-nowrap ps-5 ms-3 fw-400">برای خودم</span>
+                        </div>
+                        <div class="d-flex align-items-center mx-3">
+    
+                            <label class="container-radio position-relative d-flex mb-auto ">
+                                <input type="radio" class="position-absolute" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <span class="text-dark fs-7 text-nowrap ps-5 ms-3 fw-400">برای شخص دیگری</span>
+                        </div>
+                    </div>
+                    <!-- line -->
+                    <div class="line7865 mb-auto bg-secondary-subtle w-100 mt-3 "></div>
+    
+    
+                </div>
+                <!-- time -->
+                <div class="d-flex flex-column mt-4">
+                    <span class="text-dark fw-bold fs-7 text-start">انتخاب بازه زمانی:</span>
+                </div>
+                <div class=" w-100">
+    
+    
+    
+    
+                    <div class=" mt-4 px-3 pb-4">
+                        <div id="kt_slider_basic" class=""></div>
+                    </div>
+    
+                </div>
+                <div class="d-flex mt-10 pt-10">
+                    <button class="bg-success text-white text-tiny w-100 rounded-3 text-center py-3 border-0">اعمال
+                        فیلتر و
+                        نمایش</button>
+                </div>
+    
             </div>
         </div>
-       
+    </div>
       
        
     </main>
@@ -333,6 +389,34 @@
     <script src="https://mobile.rasmitar.ir/frontend/assets/js/scripts.bundle.js"></script>
     <script src="https://mobile.rasmitar.ir/frontend/assets/js/general.js"></script>
    
-    <!-- End script -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                slidesPerView: 3,
+                spaceBetween: 16,
+                rtl: true,
+
+            })
+        </script>
+        <script>
+
+
+            var slider = document.querySelector("#kt_slider_basic");
+
+            noUiSlider.create(slider, {
+                start: [20, 80],
+                connect: true,
+                margin: 1,
+                range: {
+                    "min": 1,
+                    "max": 45
+                },
+                tooltips: [{ to: function (value) { return `${Math.floor(value)} روز`; } }, { to: function (value) { return `${Math.floor(value)} روز`; } }],
+            });
+
+
+        </script>
+        <!-- End script -->
 </body>
 </html>

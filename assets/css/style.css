@@ -557,3 +557,8 @@ div.footer-menu>div:first-child {
 .payment-lines .content *{
     pointer-events: none;
 }
+.search-container {
+    background: white;
+    position: sticky;
+    top: -12px;
+}

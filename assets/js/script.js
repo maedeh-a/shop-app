@@ -23,5 +23,8 @@ $(function () {
 
             `
     });
+    $(".container-radio + span").on('click', function(e){
+        $(e.currentTarget).parent().find('label').click()
+    })
 
 });
