@@ -46,49 +46,49 @@
                     <div class=" w-100 px-4 position-relative select-service-swiper">
                         <div class="swiper   my-3 w-100">
                             <div class="swiper-wrapper " toggle-button-group>
-                                <div class="swiper-slide">
-                                    <button class="border-0 w-100 py-2 rounded-2 text-tiny active" toggle-button>
+                                <div class="swiper-slide w-auto"  style="min-width: 32%;">
+                                    <button class="border-0 w-100 py-2 rounded-2 text-tiny" toggle-button>
                                         بدنسازی
                                         <img src="assets/img/tick-circle.svg" alt="" width="14">
                                     </button>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide w-auto" style="min-width: 32%;">
                                     <button class="border-0 w-100 py-2 rounded-2  text-tiny" toggle-button>
                                         استخر
                                         <img src="assets/img/tick-circle.svg" alt="" width="14">
                                     </button>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide w-auto" style="min-width: 32%;">
                                     <button class="border-0 w-100 py-2 rounded-2 text-tiny" toggle-button>
                                         فوتسال
                                         <img src="assets/img/tick-circle.svg" alt="" width="14">
                                     </button>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide w-auto" style="min-width: 32%;">
                                     <button class="border-0 w-100 py-2 rounded-2 text-tiny" toggle-button>
                                         فوتسال
                                         <img src="assets/img/tick-circle.svg" alt="" width="14">
                                     </button>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide w-auto" style="min-width: 32%;">
                                     <button class="border-0 w-100 py-2 rounded-2 text-tiny" toggle-button>
                                         فوتسال
                                         <img src="assets/img/tick-circle.svg" alt="" width="14">
                                     </button>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide w-auto" style="min-width: 32%;">
                                     <button class="border-0 w-100 py-2 rounded-2 text-tiny" toggle-button>
                                         فوتسال
                                         <img src="assets/img/tick-circle.svg" alt="" width="14">
                                     </button>
                                 </div>
-                                <div class="swiper-slide">
-                                    <button class="border-0 w-100 py-2 rounded-2 text-tiny" toggle-button>
+                                <div class="swiper-slide w-auto" style="min-width: 32%;">
+                                    <button class="border-0 w-100 py-2 rounded-2 text-tiny active" toggle-button>
                                         فوتسال
                                         <img src="assets/img/tick-circle.svg" alt="" width="14">
                                     </button>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide w-auto" style="min-width: 32%;">
                                     <button class="border-0 w-100 py-1 rounded-2 text-tiny" toggle-button>
                                         فوتسال
                                         <img src="assets/img/tick-circle.svg" alt="" width="14">
@@ -325,14 +325,14 @@
     <script src="./assets/js/script.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-            slidesPerView: 3,
+            slidesPerView: "auto",
             spaceBetween: 16,
             rtl: true,
             navigation: {
                 nextEl: '.swiper-button-prev',
                 prevEl: '.swiper-button-next',
             },
-
+            initialSlide: $('.swiper').find(".swiper-slide").get().findIndex(q => $(q).children('.active').length > 0)
         })
     </script>
     <!-- End script -->
