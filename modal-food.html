@@ -368,7 +368,7 @@
                            
                         <div class="">
                             <!-- Slider main container -->
-                            <div class="swiper small-slider">
+                            <div class="swiper small-slider small-slider-triple">
                                 <!-- Additional required wrapper -->
                                 <div class="swiper-wrapper">
                                     <!-- Slides -->
@@ -743,6 +743,7 @@
                             
                             </div>
                             <div id="rateYo" class="my-4"></div>
+                            <span class="my-4 rateyo-result"></span>
                             <div class="mt-4 w-100">
                                 <button class="bg-success text-white rounded-3 text-tiny border-0
                                  py-3 px-3 w-100" data-bs-dismiss="modal"> 
@@ -830,6 +831,17 @@
 
         })
          const swiper3 = new Swiper('.small-slider', {
+                slidesPerView: 3,
+                spaceBetween: 1,
+                rtl: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+            })
+
+         const swiper4 = new Swiper('.small-slider-triple', {
                 slidesPerView: 3,
                 spaceBetween: 1,
                 rtl: true,
