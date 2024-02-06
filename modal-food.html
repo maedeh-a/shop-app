@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- cdn link -->
-        <link href="https://mobile.rasmitar.ir/frontend/assets/plugins/global/plugins.bundle.rtl.css?v=2.2" rel="stylesheet"
+        <link href="assets/css/plugin-bundle.css" rel="stylesheet"
             type="text/css" />
-        <link href="https://mobile.rasmitar.ir/frontend/assets/css/style.bundle.rtl.css?v=2.2" rel="stylesheet"
+        <link href="assets/css/bundle-rtl.css" rel="stylesheet"
             type="text/css" />
-        <link rel="stylesheet" type="text/css" href="https://mobile.rasmitar.ir/frontend/assets/styles/style.css?v=2.4">
-        <link rel="stylesheet" href="https://mobile.rasmitar.ir/frontend/assets/css/fontawesome.css">
+        <link href="assets/css/bundle.css" rel="stylesheet"
+            type="text/css" />
+        <link href="assets/css/fa.css" rel="stylesheet"
+            type="text/css" />
         <link rel="stylesheet" href="assets/css/global.css">
 
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="assets/css/jqui.css" rel="stylesheet"
+            type="text/css" />
+    <link href="assets/css/swiperjs.css" rel="stylesheet"
+            type="text/css" />
     <!-- Basic styles of the plugin  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+            <link rel="stylesheet" href="assets/css/rateyo.css">
+
+            <link rel="stylesheet" href="assets/css/pdp.css">
+
 </head>
 <body>
     <main class="mx-auto h-100 d-flex flex-column">
@@ -74,57 +81,7 @@
                     </div>
                     <!-- time select -->
                     <div class="">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <button class=" bg-light text-tiny-xs border-0 rounded-3 px-2 py-2 text-secondary">ماه قبل</button>
-                            <span class="text-secondary text-tiny-xs">آبان1402</span>
-                            <button class=" bg-light text-tiny-xs border-0 rounded-3 px-2 py-2 text-secondary-emphasis">
-                                ماه بعد
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-                                    class="bi bi-chevron-left" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="d-flex flex-column mx-2">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <span class="text-tiny-xs text-dark">شنبه </span>
-                                <span class="text-tiny-xs text-dark">1 شنبه</span>
-                                <span class="text-tiny-xs text-dark">2 شنبه </span>
-                                <span class="text-tiny-xs text-dark">3 شنبه</span>
-                                <span class="text-tiny-xs text-dark">4 شنبه</span>
-                                <span class="text-tiny-xs text-dark">5 شنبه</span>
-                                <span class="text-tiny-xs text-dark">جمعه</span>
-                    
-                            </div>
-                            <div class="d-flex align-items-center justify-content-between mb-2">
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-between mb-2">
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-between mb-2">
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                                <button class="p-3 bg-light border-0 rounded-3"></button>
-                            </div>
-                        </div>
+                        <div id="datepicker"></div>
                     </div>
                    
                     <div class="mt-3 w-100">
@@ -805,14 +762,61 @@
 
 
     <!-- script -->
-    <script src="https://mobile.rasmitar.ir/frontend/assets/plugins/global/plugins.bundle.js"></script>
-    <script src="https://mobile.rasmitar.ir/frontend/assets/js/scripts.bundle.js"></script>
-    <script src="https://mobile.rasmitar.ir/frontend/assets/js/general.js"></script>
+    <script src="assets/js/plugin-bundle.js"></script>
+    <script src="assets/js/js-bundle.js"></script>
+    
+    <script src="assets/js/general.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="assets/js/rateyo.js"></script>
+
+            <script src="assets/js/swiperjs.js"></script>
+
 
     <script src="assets/js/script.js"></script>
+        <script src="assets/js/pd.js"></script>
+        <script src="assets/js/pdp.js"></script>
+   <script>
+     $("#datepicker").persianDatepicker({
+     months: ["فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد", "شهریور", "مهر", "آبان", "آذر", "دی", "بهمن", "اسفند"],
+        dowTitle: ["شنبه", "یکشنبه", "دوشنبه", "سه شنبه", "چهارشنبه", "پنج شنبه", "جمعه"],
+        shortDowTitle: ["ش", "ی", "د", "س", "چ", "پ", "ج"],
+        showGregorianDate:false,
+        persianNumbers: !0,
+        formatDate: "YYYY/MM/DD",
+        selectedBefore: !1,
+        selectedDate: null,
+        startDate: null,
+        endDate: null,
+        navigator:{
+            text:{
+                btnNextText:  'ماه بعد ',
+                btnPrevText:  'ماه قبل ',
+
+            }
+        },
+        toolbox:{
+            enabled: false
+        },
+        theme: 'default',
+        alwaysShow: 1,
+        selectableYears: null,
+        selectableMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        cellWidth: 25, // by px
+        cellHeight: 35, // by px
+        fontSize: 13, // by px                
+        isRTL: 1,
+        inline: 1,
+        calendarPosition: {
+            x: 0,
+            y: 0,
+        },
+        onShow: function () { },
+        onHide: function () { },
+        onSelect: function () { },
+        onRender: function () { }
+});
+   </script>
+
     <!-- End script -->
     <script>
         const swiper = new Swiper('.swiper', {
